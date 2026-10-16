@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A transparent 30-question execution test of a Qwen2.5-7B PolicyMoE pipeline inspired by PolicyLLM.">
-  <title>PolicyMoE — 30-question execution test</title>
+  <meta name="description" content="A source-grounded 125-question PolicyMoE pilot dataset and an earlier Qwen2.5-7B execution test inspired by PolicyLLM.">
+  <title>PolicyMoE — 125-question pilot</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -13,6 +13,7 @@
       <a class="brand" href="#top" aria-label="PolicyMoE results home">Policy<span>MoE</span></a>
       <div class="nav-links">
         <a href="#results">Results</a>
+        <a href="#dataset">Dataset</a>
         <a href="#method">Method</a>
         <a href="https://arxiv.org/abs/2604.12995">Paper ↗</a>
       </div>
@@ -20,23 +21,24 @@
 
     <div class="hero-grid wrap" id="top">
       <div>
-        <div class="eyebrow"><span class="dot"></span> Preliminary execution test</div>
-        <h1>Can a learned router choose the right policy expert?</h1>
-        <p class="lede">We ran a small, source-grounded PolicyMoE pipeline on five U.S. Department of Energy documents using Qwen2.5-7B-Instruct. It worked end to end. The dataset is far too small to claim a winner.</p>
+        <div class="eyebrow"><span class="dot"></span> Dataset v2 ready</div>
+        <h1>A larger, leakage-aware PolicyMoE pilot.</h1>
+        <p class="lede">We expanded the project to 125 source-grounded questions from 25 U.S. Department of Energy documents: 100 for training and 25 for held-out testing. The earlier 30-question Qwen run remains below as an execution check, not a benchmark.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#results">See the results</a>
-          <a class="button secondary" href="policymoe.predictions.json">Raw PolicyMoE output</a>
+          <a class="button primary" href="#dataset">See the new dataset</a>
+          <a class="button secondary" href="#results">Earlier GPU results</a>
+          <a class="button secondary" href="pilot-125.dataset.json">Download dataset JSON</a>
         </div>
       </div>
       <aside class="run-card" aria-label="Run summary">
-        <div class="run-status"><span></span> RUN COMPLETE</div>
+        <div class="run-status"><span></span> DATASET COMPLETE</div>
         <dl>
-          <div><dt>Base model</dt><dd>Qwen2.5-7B</dd></div>
-          <div><dt>Dataset</dt><dd>30 questions</dd></div>
-          <div><dt>Train / test</dt><dd>24 / 6</dd></div>
-          <div><dt>GPU</dt><dd>NVIDIA A10 24 GB</dd></div>
-          <div><dt>Quantization</dt><dd>4-bit NF4</dd></div>
-          <div><dt>Run date</dt><dd>Oct 16, 2026</dd></div>
+          <div><dt>Documents</dt><dd>25 DOE policies</dd></div>
+          <div><dt>Dataset</dt><dd>125 questions</dd></div>
+          <div><dt>Train / test</dt><dd>100 / 25</dd></div>
+          <div><dt>Reasoning levels</dt><dd>3</dd></div>
+          <div><dt>Validation</dt><dd>18 checks passed</dd></div>
+          <div><dt>Qwen v2 run</dt><dd>Not run yet</dd></div>
         </dl>
       </aside>
     </div>
@@ -45,12 +47,33 @@
   <main>
     <section class="notice wrap" aria-label="Important limitation">
       <div class="notice-mark">!</div>
-      <div><strong>Read this as a plumbing test, not a benchmark.</strong> Only one source document and six questions were held out. One different answer changes a level score by 50 percentage points. Open-ended judging is still pending.</div>
+      <div><strong>Two project stages are shown.</strong> The 125-question dataset is complete but has not been used for a new GPU run. The scores below come only from the earlier 30-question smoke test, where six questions were held out.</div>
+    </section>
+
+    <section class="section wrap" id="dataset">
+      <div class="section-head">
+        <div><p class="kicker">Dataset v2</p><h2>100 training questions. 25 held-out tests.</h2></div>
+        <p>Each test document is completely excluded from training. Related Section 48C documents are grouped together to reduce policy-family leakage.</p>
+      </div>
+      <div class="stats-grid">
+        <article class="stat-card"><strong>25</strong><span>source documents</span></article>
+        <article class="stat-card"><strong>50</strong><span>Level 1 · facts</span></article>
+        <article class="stat-card"><strong>50</strong><span>Level 2 · understanding</span></article>
+        <article class="stat-card"><strong>25</strong><span>Level 3 · application</span></article>
+      </div>
+      <div class="reading">
+        <h3>What is complete?</h3>
+        <p>All 125 questions include source evidence, unique IDs, and validated formats. The held-out set contains 10 Level 1, 10 Level 2, and 5 Level 3 questions. Two open-ended test items include five-point judging rubrics. All 18 automated pipeline checks pass.</p>
+      </div>
+      <div class="reading next-run">
+        <h3>What comes next?</h3>
+        <p>Train the frozen Qwen baseline comparison, the single shared LoRA, three level-specialist LoRAs, and the learned linear top-1 router on the 100-question split; then evaluate all systems on the same 25 held-out questions.</p>
+      </div>
     </section>
 
     <section class="section wrap" id="results">
       <div class="section-head">
-        <div><p class="kicker">Held-out evaluation</p><h2>Three systems, six questions</h2></div>
+        <div><p class="kicker">Earlier 30-question smoke test</p><h2>Three systems, six held-out questions</h2></div>
         <p>Accuracy covers multiple-choice and true/false items. The open Level 3 answer is excluded until two-model judging is run.</p>
       </div>
 
@@ -115,21 +138,21 @@
     <section class="section wrap" id="method">
       <div class="section-head">
         <div><p class="kicker">From documents to answers</p><h2>What we actually built</h2></div>
-        <p>The raw source format and core three-expert idea follow the paper’s official release. The questions and implementation here are our own small execution fixture.</p>
+        <p>The raw source format and core three-expert idea follow the paper’s official release. The questions and implementation are our own pilot—not a reproduction of the paper’s published results.</p>
       </div>
 
       <ol class="steps">
-        <li><span>01</span><div><h3>Analyze policy documents</h3><p>Five DOE documents from the paper repository’s released policy archive.</p></div></li>
-        <li><span>02</span><div><h3>Author three-level questions</h3><p>Facts, understanding, and applied scenarios; 30 total, grouped by source.</p></div></li>
-        <li><span>03</span><div><h3>Split without document leakage</h3><p>Four documents for training and one entire document held out for testing.</p></div></li>
+        <li><span>01</span><div><h3>Analyze policy documents</h3><p>Twenty-five DOE documents from the paper repository’s released policy archive.</p></div></li>
+        <li><span>02</span><div><h3>Author three-level questions</h3><p>Facts, understanding, and applied scenarios; 125 total, grounded in source evidence.</p></div></li>
+        <li><span>03</span><div><h3>Split without document leakage</h3><p>Twenty documents for training and five entire documents held out for testing.</p></div></li>
         <li><span>04</span><div><h3>Train adapters and router</h3><p>One shared LoRA, three specialist LoRAs, and a learned linear top-1 router.</p></div></li>
-        <li><span>05</span><div><h3>Compare consistently</h3><p>Frozen Qwen, shared LoRA, and PolicyMoE used the same six test questions.</p></div></li>
+        <li><span>05</span><div><h3>Compare consistently</h3><p>Frozen Qwen, shared LoRA, and PolicyMoE will use the same 25 held-out questions.</p></div></li>
       </ol>
     </section>
 
     <section class="section wrap two-col">
       <div class="spec-card">
-        <p class="kicker">Training configuration</p>
+        <p class="kicker">Planned v2 training configuration</p>
         <table>
           <tbody>
             <tr><th>Base</th><td>Qwen/Qwen2.5-7B-Instruct</td></tr>
@@ -146,7 +169,8 @@
         <h2>What this does not prove</h2>
         <ul>
           <li>No statistical significance or architecture superiority.</li>
-          <li>No replication of the paper’s full 21K-question benchmark.</li>
+          <li>No replication of the paper’s full benchmark or published results.</li>
+          <li>The 125-question dataset has not yet completed GPU training.</li>
           <li>No two-judge score for the open Level 3 response yet.</li>
           <li>Questions were authored and editorially reviewed, not generated in a logged live model run.</li>
           <li>Distractor traces are reconstructed fixtures, not original generation logs.</li>
@@ -158,6 +182,9 @@
       <p class="kicker">Reproducibility</p>
       <h2>Inspect the run</h2>
       <div class="source-links">
+        <a href="pilot-125.dataset.json"><span>125-question dataset</span><small>JSON</small></a>
+        <a href="pilot-125.manifest.json"><span>Dataset manifest</span><small>JSON</small></a>
+        <a href="pilot-125.test-level-3.json"><span>Held-out Level 3 set</span><small>JSON</small></a>
         <a href="comparison.md"><span>Summary report</span><small>Markdown</small></a>
         <a href="baseline.predictions.json"><span>Frozen predictions</span><small>JSON</small></a>
         <a href="single_lora.predictions.json"><span>Single LoRA predictions</span><small>JSON</small></a>

@@ -1,0 +1,84 @@
+[
+  {
+    "policy_name": "Biden-Harris Administration Releases Joint Policy Statement and Principles on Voluntary Carbon Markets",
+    "question_type": "multiple_choice",
+    "question": "Applying the May 28, 2024 voluntary-carbon-markets announcement, a project proposes credits for reductions that would have occurred even without the project. It also creates local jobs. Which assessment follows from the announcement's integrity principle?",
+    "choice": {
+      "A": "The credits are supported if their sale finances an innovative technology, regardless of the underlying reductions.",
+      "B": "The jobs establish a sufficient co-benefit to support the credits even without any additional climate impact.",
+      "C": "Voluntary participation supports the credits because additional climate impact matters only in compulsory markets.",
+      "D": "The jobs are a possible co-benefit, but they do not establish the additional climate impact needed to support those credits."
+    },
+    "answer": "D",
+    "classification": "Scenario-Based Decision-Making",
+    "explanation": "The proposed reductions fail the source's counterfactual requirement. Community benefits do not replace that requirement.",
+    "id": 3,
+    "evidence_quote": "Critically, stakeholders must be certain that one credit truly represents one tonne of carbon dioxide (or its equivalent) reduced or removed from the atmosphere, beyond what would have otherwise occurred."
+  },
+  {
+    "policy_name": "Biden-Harris Administration Announces $4 Billion in Tax Credits to Build Clean Energy Supply Chain, Drive Investments, and Lower Costs in Energy Communities",
+    "question_type": "q&a",
+    "question": "Under the process described in the March 29, 2024 48C announcement, a selected project proposes waiting three years to submit its certification information and then waiting three more years after certification to enter service. Identify both timing problems and describe the two-stage timeline the project should instead plan around.",
+    "answer": "The first proposed three-year wait exceeds the requirement to submit information to the 48C portal within two years to certify the selected project. The second proposed three-year wait exceeds the additional two-year period following project certification for placing the project in service. The plan should therefore distinguish timely certification-information submission from the later in-service milestone, anchor the second deadline to certification, and shorten both proposed waits to the respective two-year limits. Merely starting construction is not the stated in-service milestone.",
+    "classification": "Procedural/Institutional Implementation",
+    "explanation": "The source sets separate certification and in-service deadlines. The hypothetical exceeds each by one year and cannot treat them as one unrestricted development period.",
+    "id": 10,
+    "evidence_quote": "For selected projects to receive the tax credit, information will need to be submitted to the 48C portal within two years to certify the project. Within an additional two years following project certification, the project must be placed in service.",
+    "key_points": [
+      "Identify that the proposed three-year wait to submit certification information exceeds two years.",
+      "State that certification information must be submitted through the 48C portal within two years.",
+      "Identify that the proposed three-year post-certification wait exceeds the additional two-year period.",
+      "Anchor the second period to project certification rather than to the first application or construction start.",
+      "Identify placement in service as the second milestone, rather than merely beginning construction."
+    ]
+  },
+  {
+    "policy_name": "Federal Support Opportunities to Remediate and Redevelop Energy Assets: Wide-Ranging Initiatives to Drive Investment Opportunities in Energy Communities",
+    "question_type": "multiple_choice",
+    "question": "A developer finds a retired coal plant in the Coal Redevelopment Opportunities Mapping Tool mentioned in DOE's energy-asset-redevelopment announcement. Based on that announcement alone, which conclusion is justified?",
+    "choice": {
+      "A": "The site qualifies for an EIR loan award; only the size of the loan remains to be determined.",
+      "B": "The site merits investigation as a potential redevelopment opportunity; map inclusion does not establish a loan award or tax-credit eligibility.",
+      "C": "The site has completed contamination assessment and cleanup because the coal map lists only redevelopment-ready locations.",
+      "D": "The site qualifies for the energy-community bonus tax credit because the coal map is the credit's eligibility determination."
+    },
+    "answer": "B",
+    "classification": "Scenario-Based Decision-Making",
+    "explanation": "The coal map screens potential opportunities. The announcement separately references a map for areas that may qualify for the bonus tax credit and does not make either map a funding decision.",
+    "id": 17,
+    "evidence_quote": "Additionally, explore which coal power plants that have been closed or set-to-retire that are relevant for potential redevelopment opportunities with our Coal Redevelopment Opportunities Mapping Tool found here."
+  },
+  {
+    "policy_name": "Biden-Harris Administration Announces Historic Investments to Support America’s Energy and Industrial Communities",
+    "question_type": "q&a",
+    "question": "Apply the February 13, 2023 announcement's Low-Income Communities Bonus Credit rules to two hypothetical projects that otherwise meet the applicable requirements. Project A is installed on Tribal land but is not part of a qualified low-income residential building and directs 40% of its electricity's financial benefits to low-income households. Project B is not on Tribal land or in a low-income community, is not part of a qualified low-income residential building, and directs 55% of those benefits to low-income households. Which stated bonus category and percentage-point increase fit each project, and what distinction matters?",
+    "answer": "Project A fits the Tribal-land category and the stated 10-percentage-point increase. Its 40% benefit share does not meet the alternative 50% threshold for the 20-percentage-point category, and the scenario excludes the qualified-building route. Project B meets the benefit-based route to the 20-percentage-point increase because 55% exceeds 50%; that route is described separately from location on Tribal land or in a low-income community. These are percentage-point increases, not multipliers of an existing credit, and the scenario's other-eligibility assumption does not turn this category assessment into an actual award decision.",
+    "classification": "Scenario-Based Decision-Making",
+    "explanation": "The scenario tests the distinction between a location-based 10-point category and a financial-benefit-based 20-point category without assuming that the benefits add together.",
+    "id": 21,
+    "evidence_quote": "Beginning in 2023, a 10 percentage point increase is available to eligible solar and wind facilities that are installed in low-income communities or on Tribal land. A 20 percentage point credit increase will be available to clean energy projects that serve a qualified low-income residential building or provide at least 50% of the financial benefits of electricity generated to low-income households.",
+    "key_points": [
+      "Assign Project A to the Tribal-land category.",
+      "Give Project A the stated 10-percentage-point increase.",
+      "Explain that A's 40% benefit share does not meet the 50% threshold for the benefit-based 20-point category.",
+      "Explain that Project B's 55% benefit share meets the separate at-least-50% route despite its stated location.",
+      "Give Project B the stated 20-percentage-point increase rather than adding the 10- and 20-point categories."
+    ]
+  },
+  {
+    "policy_name": "Biden- Harris Administration Supports Local Projects to Save Energy and Tackle the Climate Crisis as part of Investing in America Agenda",
+    "question_type": "multiple_choice",
+    "question": "An EECBG-eligible town needs help designing an energy-efficiency strategy before it has a completed project plan. Under the February 28, 2024 announcement, which next step is consistent with the available assistance?",
+    "choice": {
+      "A": "Seek DOE technical assistance for the application and strategy, including Blueprints or cohort training, while developing the project plan.",
+      "B": "Wait for a construction award because the announced technical assistance cannot support application preparation.",
+      "C": "Abandon strategy development and apply only for equipment because the announced assistance excludes planning activities.",
+      "D": "Complete the project plan without DOE support because the announced technical assistance is limited to installed equipment."
+    },
+    "answer": "A",
+    "classification": "Scenario-Based Decision-Making",
+    "explanation": "The source explicitly supports application preparation, strategies, and project planning. It does not require the town to finish those tasks before seeking assistance.",
+    "id": 22,
+    "evidence_quote": "DOE offers technical assistance to EECBG Program eligible entities to prepare their applications and energy efficiency and conservation strategies, develop project plans, and identify opportunities in their communities."
+  }
+]
