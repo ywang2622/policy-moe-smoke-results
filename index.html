@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A transparent 30-question execution test of a Qwen2.5-7B PolicyMoE pipeline inspired by PolicyLLM.">
+  <title>PolicyMoE — 30-question execution test</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <nav class="nav wrap" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="PolicyMoE results home">Policy<span>MoE</span></a>
+      <div class="nav-links">
+        <a href="#results">Results</a>
+        <a href="#method">Method</a>
+        <a href="https://arxiv.org/abs/2604.12995">Paper ↗</a>
+      </div>
+    </nav>
+
+    <div class="hero-grid wrap" id="top">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> Preliminary execution test</div>
+        <h1>Can a learned router choose the right policy expert?</h1>
+        <p class="lede">We ran a small, source-grounded PolicyMoE pipeline on five U.S. Department of Energy documents using Qwen2.5-7B-Instruct. It worked end to end. The dataset is far too small to claim a winner.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#results">See the results</a>
+          <a class="button secondary" href="policymoe.predictions.json">Raw PolicyMoE output</a>
+        </div>
+      </div>
+      <aside class="run-card" aria-label="Run summary">
+        <div class="run-status"><span></span> RUN COMPLETE</div>
+        <dl>
+          <div><dt>Base model</dt><dd>Qwen2.5-7B</dd></div>
+          <div><dt>Dataset</dt><dd>30 questions</dd></div>
+          <div><dt>Train / test</dt><dd>24 / 6</dd></div>
+          <div><dt>GPU</dt><dd>NVIDIA A10 24 GB</dd></div>
+          <div><dt>Quantization</dt><dd>4-bit NF4</dd></div>
+          <div><dt>Run date</dt><dd>Oct 16, 2026</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </header>
+
+  <main>
+    <section class="notice wrap" aria-label="Important limitation">
+      <div class="notice-mark">!</div>
+      <div><strong>Read this as a plumbing test, not a benchmark.</strong> Only one source document and six questions were held out. One different answer changes a level score by 50 percentage points. Open-ended judging is still pending.</div>
+    </section>
+
+    <section class="section wrap" id="results">
+      <div class="section-head">
+        <div><p class="kicker">Held-out evaluation</p><h2>Three systems, six questions</h2></div>
+        <p>Accuracy covers multiple-choice and true/false items. The open Level 3 answer is excluded until two-model judging is run.</p>
+      </div>
+
+      <div class="result-grid">
+        <article class="result-card">
+          <div class="system-label">Frozen baseline</div>
+          <h3>Qwen only</h3>
+          <div class="score-row"><span>L1 · facts</span><strong>0%</strong></div>
+          <div class="bar"><i style="width:0%"></i></div>
+          <div class="score-row"><span>L2 · understanding</span><strong>100%</strong></div>
+          <div class="bar"><i style="width:100%"></i></div>
+          <div class="score-row"><span>L3 · application</span><strong>100%</strong></div>
+          <div class="bar"><i style="width:100%"></i></div>
+        </article>
+
+        <article class="result-card winner">
+          <div class="system-label">Shared adapter</div>
+          <h3>Single LoRA</h3>
+          <div class="score-row"><span>L1 · facts</span><strong>50%</strong></div>
+          <div class="bar"><i style="width:50%"></i></div>
+          <div class="score-row"><span>L2 · understanding</span><strong>100%</strong></div>
+          <div class="bar"><i style="width:100%"></i></div>
+          <div class="score-row"><span>L3 · application</span><strong>100%</strong></div>
+          <div class="bar"><i style="width:100%"></i></div>
+        </article>
+
+        <article class="result-card moe">
+          <div class="system-label">Learned top-1 router</div>
+          <h3>PolicyMoE</h3>
+          <div class="score-row"><span>L1 · facts</span><strong>0%</strong></div>
+          <div class="bar"><i style="width:0%"></i></div>
+          <div class="score-row"><span>L2 · understanding</span><strong>100%</strong></div>
+          <div class="bar"><i style="width:100%"></i></div>
+          <div class="score-row"><span>L3 · application</span><strong>100%</strong></div>
+          <div class="bar"><i style="width:100%"></i></div>
+        </article>
+      </div>
+
+      <div class="reading">
+        <h3>What happened?</h3>
+        <p>The shared LoRA answered one of two Level 1 questions correctly; the other systems missed both. Every system answered the two Level 2 items and the objective Level 3 item correctly. With counts this small, the responsible conclusion is simply that training and inference completed—not that one architecture is better.</p>
+      </div>
+    </section>
+
+    <section class="section dark" id="router">
+      <div class="wrap router-grid">
+        <div>
+          <p class="kicker mint">Learned routing</p>
+          <h2>The router chose an expert from the question alone.</h2>
+          <p class="muted">No known level label was used at inference. A trained linear layer scored the frozen base-model representation, applied softmax, and loaded only the highest-scoring adapter.</p>
+        </div>
+        <div class="router-card">
+          <div class="router-title"><span>Expert selections on 6 test items</span><strong>Top-1</strong></div>
+          <div class="route-row"><span>Memory</span><div class="route-track"><i style="width:16.7%"></i></div><b>1</b></div>
+          <div class="route-row"><span>Understanding</span><div class="route-track"><i style="width:0%"></i></div><b>0</b></div>
+          <div class="route-row"><span>Application</span><div class="route-track"><i style="width:83.3%"></i></div><b>5</b></div>
+          <p class="router-note">The router heavily favored the application adapter. On this tiny split, that included both Level 2 questions and one Level 1 question.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="method">
+      <div class="section-head">
+        <div><p class="kicker">From documents to answers</p><h2>What we actually built</h2></div>
+        <p>The raw source format and core three-expert idea follow the paper’s official release. The questions and implementation here are our own small execution fixture.</p>
+      </div>
+
+      <ol class="steps">
+        <li><span>01</span><div><h3>Analyze policy documents</h3><p>Five DOE documents from the paper repository’s released policy archive.</p></div></li>
+        <li><span>02</span><div><h3>Author three-level questions</h3><p>Facts, understanding, and applied scenarios; 30 total, grouped by source.</p></div></li>
+        <li><span>03</span><div><h3>Split without document leakage</h3><p>Four documents for training and one entire document held out for testing.</p></div></li>
+        <li><span>04</span><div><h3>Train adapters and router</h3><p>One shared LoRA, three specialist LoRAs, and a learned linear top-1 router.</p></div></li>
+        <li><span>05</span><div><h3>Compare consistently</h3><p>Frozen Qwen, shared LoRA, and PolicyMoE used the same six test questions.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="section wrap two-col">
+      <div class="spec-card">
+        <p class="kicker">Training configuration</p>
+        <table>
+          <tbody>
+            <tr><th>Base</th><td>Qwen/Qwen2.5-7B-Instruct</td></tr>
+            <tr><th>LoRA</th><td>rank 16 · alpha 32 · dropout 0.05</td></tr>
+            <tr><th>Adapters</th><td>3 epochs · learning rate 5e-5</td></tr>
+            <tr><th>Router</th><td>4 epochs · learning rate 5e-5</td></tr>
+            <tr><th>Inference</th><td>greedy · top-1 expert · 384 max tokens</td></tr>
+            <tr><th>Checkpoint</th><td>Qwen revision a09a354</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="limitations">
+        <p class="kicker">Known limitations</p>
+        <h2>What this does not prove</h2>
+        <ul>
+          <li>No statistical significance or architecture superiority.</li>
+          <li>No replication of the paper’s full 21K-question benchmark.</li>
+          <li>No two-judge score for the open Level 3 response yet.</li>
+          <li>Questions were authored and editorially reviewed, not generated in a logged live model run.</li>
+          <li>Distractor traces are reconstructed fixtures, not original generation logs.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section wrap sources">
+      <p class="kicker">Reproducibility</p>
+      <h2>Inspect the run</h2>
+      <div class="source-links">
+        <a href="comparison.md"><span>Summary report</span><small>Markdown</small></a>
+        <a href="baseline.predictions.json"><span>Frozen predictions</span><small>JSON</small></a>
+        <a href="single_lora.predictions.json"><span>Single LoRA predictions</span><small>JSON</small></a>
+        <a href="policymoe.predictions.json"><span>PolicyMoE predictions</span><small>JSON</small></a>
+        <a href="https://github.com/wad3birch/PolicyLLM"><span>Paper repository</span><small>External ↗</small></a>
+        <a href="https://arxiv.org/abs/2604.12995"><span>PolicyLLM paper</span><small>arXiv ↗</small></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <p><strong>PolicyMoE execution test</strong><br><span>Transparent results over inflated claims.</span></p>
+      <p>Built from public DOE policy documents.<br>Completed October 16, 2026.</p>
+    </div>
+  </footer>
+</body>
+</html>

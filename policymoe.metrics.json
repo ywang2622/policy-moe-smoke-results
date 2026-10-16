@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "dataset_sha256": "74df87e339f3017a8229f5dd07570b641de0d034c1c000aabe743654488f05ef",
+    "system": "policymoe",
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "resolved_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "quantized_nf4": true,
+    "decoding": "greedy",
+    "max_new_tokens": 384,
+    "checkpoint_config_sha256": "79fc81c21a282b55da27759403c3d1b4dc9137ae244f73e4231f51a9417ae660",
+    "dataset_kind": "authored_editorially_reviewed_fixture",
+    "test_question_count": 6,
+    "test_document_count": 1
+  },
+  "judge_models": [],
+  "judge_note": "Budget judges are exploratory; not the paper's strong-model judge panel",
+  "levels": {
+    "1": {
+      "objective_count": 2,
+      "open_count": 0,
+      "objective_accuracy": 0.0,
+      "open_mean_0_to_5": null,
+      "paper_weighted_score": 0.0,
+      "judging_complete": true
+    },
+    "2": {
+      "objective_count": 2,
+      "open_count": 0,
+      "objective_accuracy": 1.0,
+      "open_mean_0_to_5": null,
+      "paper_weighted_score": 1.0,
+      "judging_complete": true
+    },
+    "3": {
+      "objective_count": 1,
+      "open_count": 1,
+      "objective_accuracy": 1.0,
+      "open_mean_0_to_5": null,
+      "paper_weighted_score": null,
+      "judging_complete": false
+    }
+  },
+  "items": [
+    {
+      "uid": "doe-assets-l1",
+      "level": 1,
+      "type": "multiple_choice",
+      "score": 0,
+      "parsed_answer": "A",
+      "format_valid": true
+    },
+    {
+      "uid": "doe-assets-l1-tf",
+      "level": 1,
+      "type": "true_or_false",
+      "score": 0,
+      "parsed_answer": "false",
+      "format_valid": true
+    },
+    {
+      "uid": "doe-assets-l2",
+      "level": 2,
+      "type": "multiple_choice",
+      "score": 1,
+      "parsed_answer": "A",
+      "format_valid": true
+    },
+    {
+      "uid": "doe-assets-l2-tf",
+      "level": 2,
+      "type": "true_or_false",
+      "score": 1,
+      "parsed_answer": "false",
+      "format_valid": true
+    },
+    {
+      "uid": "doe-assets-l3",
+      "level": 3,
+      "type": "q&a",
+      "score": null
+    },
+    {
+      "uid": "doe-assets-l3-mc",
+      "level": 3,
+      "type": "multiple_choice",
+      "score": 1,
+      "parsed_answer": "A",
+      "format_valid": true
+    }
+  ]
+}

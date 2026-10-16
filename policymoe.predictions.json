@@ -1,0 +1,77 @@
+{
+  "metadata": {
+    "dataset_sha256": "74df87e339f3017a8229f5dd07570b641de0d034c1c000aabe743654488f05ef",
+    "system": "policymoe",
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "resolved_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "quantized_nf4": true,
+    "decoding": "greedy",
+    "max_new_tokens": 384,
+    "checkpoint_config_sha256": "79fc81c21a282b55da27759403c3d1b4dc9137ae244f73e4231f51a9417ae660",
+    "dataset_kind": "authored_editorially_reviewed_fixture",
+    "test_question_count": 6,
+    "test_document_count": 1
+  },
+  "predictions": [
+    {
+      "uid": "doe-assets-l1",
+      "prediction": "A",
+      "selected_expert": "memory",
+      "router_probabilities": [
+        0.42952632904052734,
+        0.42058366537094116,
+        0.14989006519317627
+      ]
+    },
+    {
+      "uid": "doe-assets-l1-tf",
+      "prediction": "False",
+      "selected_expert": "application",
+      "router_probabilities": [
+        0.08807078748941422,
+        0.17838698625564575,
+        0.733542263507843
+      ]
+    },
+    {
+      "uid": "doe-assets-l2",
+      "prediction": "A",
+      "selected_expert": "application",
+      "router_probabilities": [
+        0.08110766857862473,
+        0.03217046707868576,
+        0.8867219090461731
+      ]
+    },
+    {
+      "uid": "doe-assets-l2-tf",
+      "prediction": "False",
+      "selected_expert": "application",
+      "router_probabilities": [
+        0.026741551235318184,
+        0.04912646487355232,
+        0.9241320490837097
+      ]
+    },
+    {
+      "uid": "doe-assets-l3",
+      "prediction": "For a community looking to convert a retired, potentially contaminated coal plant into a clean-energy project, the following federal support options from the Department of Energy (DOE) document on remediating and redeveloping energy assets should be investigated:\n\n1. **Redevelopment Capital**: The community should explore the DOE’s loan programs, such as the Loan Programs Office (LPO), which provides financial assistance for advanced energy projects. Additionally, the DOE’s State Energy Program (SEP) offers grants and technical assistance to states for energy efficiency and renewable energy projects.\n\n2. **Contamination Assessment and Cleanup**: The community should consider the Environmental Protection Agency (EPA) Brownfields Program, which provides grants and other resources to assess, revitalize, and develop properties that may be contaminated with hazardous substances. The EPA also has the Superfund program for more complex or hazardous sites.\n\n3. **Clean-Energy Investment**: The community can look into the DOE’s Clean Energy Manufacturing Initiative, which supports the development of clean energy technologies and manufacturing capabilities. The DOE’s Energy Efficiency and Renewable Energy (EERE) office also offers various funding opportunities and technical assistance for clean energy projects.\n\nThe two referenced mapping tools mentioned in the document can help establish:\n\n- **Energy Community Mapping Tool**: This tool can identify existing energy infrastructure and resources within the community, helping to understand the potential for clean energy projects.\n- **Brownfields Mapping Tool**: This tool can pinpoint areas with contaminated properties, aiding in the identification of sites suitable for remediation and redevelopment.",
+      "selected_expert": "application",
+      "router_probabilities": [
+        0.055054523050785065,
+        0.00883337203413248,
+        0.936112105846405
+      ]
+    },
+    {
+      "uid": "doe-assets-l3-mc",
+      "prediction": "A",
+      "selected_expert": "application",
+      "router_probabilities": [
+        0.04123659059405327,
+        0.02630525827407837,
+        0.9324581623077393
+      ]
+    }
+  ]
+}

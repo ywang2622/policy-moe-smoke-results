@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "dataset_sha256": "74df87e339f3017a8229f5dd07570b641de0d034c1c000aabe743654488f05ef",
+    "system": "single_lora",
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "resolved_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "quantized_nf4": true,
+    "decoding": "greedy",
+    "max_new_tokens": 384,
+    "checkpoint_config_sha256": "79fc81c21a282b55da27759403c3d1b4dc9137ae244f73e4231f51a9417ae660",
+    "dataset_kind": "authored_editorially_reviewed_fixture",
+    "test_question_count": 6,
+    "test_document_count": 1
+  },
+  "predictions": [
+    {
+      "uid": "doe-assets-l1",
+      "prediction": "D",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "doe-assets-l1-tf",
+      "prediction": "false",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "doe-assets-l2",
+      "prediction": "A",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "doe-assets-l2-tf",
+      "prediction": "false",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "doe-assets-l3",
+      "prediction": "The community should investigate the following federal support options:\n\n1. **Redevelopment Capital**: The Community Revitalization Fund (CRF) and the Brownfields Program. The CRF provides grants for community revitalization projects, including brownfield sites. The Brownfields Program offers grants and loans for environmental cleanup and job training.\n\n2. **Contamination Assessment and Cleanup**: The Brownfields Program and the Superfund Program. The Brownfields Program provides grants for site assessment, cleanup, and job training. The Superfund Program is responsible for cleaning up the most hazardous and complex sites through a combination of enforcement actions and cleanup activities.\n\n3. **Clean-Energy Investment**: The Clean Energy Manufacturing Assistance Center (CEMAC), the Loan Programs Office (LPO), and the Energy Efficiency and Renewable Energy (EERE) programs. CEMAC provides technical assistance and resources for manufacturers to improve energy efficiency and reduce greenhouse gas emissions. LPO offers loan guarantees for large-scale renewable energy and energy efficiency projects. EERE supports research, development, demonstration, and deployment of energy efficiency and renewable energy technologies.\n\nThe two referenced mapping tools can help establish:\n\n- **Community Revitalization Fund (CRF) Mapping Tool**: This tool helps identify eligible communities and projects that can benefit from CRF funding.\n- **Brownfields Mapping Tool**: This tool identifies potential brownfield sites across the country, providing information on site status, available funding, and local contacts.",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "doe-assets-l3-mc",
+      "prediction": "A",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    }
+  ]
+}

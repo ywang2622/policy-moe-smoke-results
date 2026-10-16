@@ -1,0 +1,53 @@
+{
+  "metadata": {
+    "dataset_sha256": "74df87e339f3017a8229f5dd07570b641de0d034c1c000aabe743654488f05ef",
+    "system": "baseline",
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "resolved_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "quantized_nf4": true,
+    "decoding": "greedy",
+    "max_new_tokens": 384,
+    "checkpoint_config_sha256": null,
+    "dataset_kind": "authored_editorially_reviewed_fixture",
+    "test_question_count": 6,
+    "test_document_count": 1
+  },
+  "predictions": [
+    {
+      "uid": "doe-assets-l1",
+      "prediction": "A",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "doe-assets-l1-tf",
+      "prediction": "False",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "doe-assets-l2",
+      "prediction": "A",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "doe-assets-l2-tf",
+      "prediction": "False",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "doe-assets-l3",
+      "prediction": "Based on the \"Federal Support Opportunities to Remediate and Redevelop Energy Assets: Wide-Ranging Initiatives to Drive Investment Opportunities in Energy Communities\" document, a community looking to convert a retired, potentially contaminated coal plant into a clean-energy project should investigate several federal support options:\n\n1. **Redevelopment Capital**: The community can explore the **Energy Efficiency and Conservation Block Grant (EECBG) program** under the American Recovery and Reinvestment Act of 2009, which provides funding for energy efficiency and conservation projects. Additionally, the **Department of Energy’s (DOE) Loan Programs Office (LPO)** offers loans and loan guarantees for large-scale renewable energy and energy efficiency projects.\n\n2. **Contamination Assessment and Cleanup**: For contamination issues, the **Superfund program** administered by the Environmental Protection Agency (EPA) can provide financial assistance for the investigation and cleanup of hazardous waste sites. The **Brownfields Program**, also managed by the EPA, offers grants, loans, and other resources to support the environmental cleanup and redevelopment of properties.\n\n3. **Clean-Energy Investment**: The **Investment Tax Credit (ITC)** and **Production Tax Credit (PTC)** are available for renewable energy projects. The **Renewable Energy and Energy Efficiency Tax Incentives** provide tax credits for various clean energy technologies. The **Department of Energy’s (DOE) Office of Energy Efficiency and Renewable Energy (EERE)** also offers funding through programs like the **SunShot Initiative** for solar energy projects and the **Wind Energy Technologies Office** for wind projects.\n\nThe two referenced mapping tools mentioned in the document can help establish:\n\n- **Mapping Tools for Energy Communities**: These tools can identify potential sites for redevelopment, assess local energy resources, and map out existing infrastructure. They can assist in understanding the feasibility of converting the coal plant to a clean-energy project by highlighting nearby transmission lines, renewable",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "doe-assets-l3-mc",
+      "prediction": "A",
+      "selected_expert": null,
+      "router_probabilities": null
+    }
+  ]
+}
