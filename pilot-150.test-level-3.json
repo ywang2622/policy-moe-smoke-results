@@ -1,0 +1,304 @@
+[
+  {
+    "policy_name": "Biden-Harris Administration Releases Joint Policy Statement and Principles on Voluntary Carbon Markets",
+    "question_type": "multiple_choice",
+    "question": "Applying the May 28, 2024 voluntary-carbon-markets announcement, a project proposes credits for reductions that would have occurred even without the project. It also creates local jobs. Which assessment follows from the announcement's integrity principle?",
+    "choice": {
+      "A": "The credits are supported if their sale finances an innovative technology, regardless of the underlying reductions.",
+      "B": "The jobs establish a sufficient co-benefit to support the credits even without any additional climate impact.",
+      "C": "Voluntary participation supports the credits because additional climate impact matters only in compulsory markets.",
+      "D": "The jobs are a possible co-benefit, but they do not establish the additional climate impact needed to support those credits."
+    },
+    "answer": "D",
+    "classification": "Scenario-Based Decision-Making",
+    "explanation": "The proposed reductions fail the source's counterfactual requirement. Community benefits do not replace that requirement.",
+    "id": 3,
+    "evidence_quote": "Critically, stakeholders must be certain that one credit truly represents one tonne of carbon dioxide (or its equivalent) reduced or removed from the atmosphere, beyond what would have otherwise occurred."
+  },
+  {
+    "policy_name": "Biden-Harris Administration Releases Joint Policy Statement and Principles on Voluntary Carbon Markets",
+    "question_type": "multiple_choice",
+    "question": "At the time of the May 28, 2024 voluntary-carbon-markets announcement, a farm association wants to submit public input on the protocols used in these markets. Which newly announced channel matches that purpose?",
+    "choice": {
+      "A": "The Department of Agriculture's Request for Information on voluntary-carbon-market protocols.",
+      "B": "The Department of State's leadership in negotiating international climate agreements.",
+      "C": "The Department of Energy's announcement of Carbon Dioxide Removal Purchase Pilot Prize semifinalists.",
+      "D": "The Department of the Treasury's release of principles for private-sector net-zero transition planning."
+    },
+    "answer": "A",
+    "classification": "Procedural/Institutional Implementation",
+    "explanation": "The source identifies USDA's RFI as the channel requesting public protocol input; the other named activities serve different functions.",
+    "id": 4,
+    "evidence_quote": "the release of a Request for Information by the Department of Agriculture asking for public input relating to the protocols used in VCMs, furthering its work to implement the Growing Climate Solutions Act"
+  },
+  {
+    "policy_name": "Biden-Harris Administration Releases Joint Policy Statement and Principles on Voluntary Carbon Markets",
+    "question_type": "q&a",
+    "question": "A coordinator preparing a briefing under the May 28, 2024 voluntary-carbon-markets announcement needs to assign five workstreams to the agencies identified in that announcement: direct carbon-removal purchases, market infrastructure and support, international climate-agreement negotiations, international crediting initiatives such as LEAF and the Energy Transition Accelerator, and principles for private-sector net-zero transition planning. Map each workstream to its stated agency without inventing new authority.",
+    "answer": "Assign direct carbon-removal purchases to DOE; market infrastructure and support to USDA; international climate-agreement negotiations to the Department of State; support for initiatives such as LEAF and the Energy Transition Accelerator also to State; and principles for private-sector net-zero transition planning to Treasury. This maps the activities named in the announcement and does not create exclusive jurisdiction or additional regulatory powers.",
+    "classification": "Procedural/Institutional Implementation",
+    "explanation": "The coordinator must map the proposed implementation workstreams to the distinct agency activities enumerated in the source.",
+    "id": 5,
+    "evidence_quote": "direct carbon removal purchases by the Department of Energy; the buildout of market infrastructure and support by the Department of Agriculture; the Department of State's leadership in negotiating international climate agreements and in supporting high-integrity crediting initiatives, such as the LEAF Coalition and Energy Transition Accelerator;   and the Department of the Treasury’s release of principles to support private sector net-zero transition planning.",
+    "key_points": [
+      "Assign direct carbon-removal purchases to the Department of Energy.",
+      "Assign market infrastructure and support to the Department of Agriculture.",
+      "Assign international climate-agreement negotiations to the Department of State.",
+      "Assign support for LEAF and the Energy Transition Accelerator to the Department of State.",
+      "Assign principles for private-sector net-zero transition planning to the Department of the Treasury."
+    ]
+  },
+  {
+    "policy_name": "Biden-Harris Administration Releases Joint Policy Statement and Principles on Voluntary Carbon Markets",
+    "question_type": "true_or_false",
+    "question": "Assume 500 credits each satisfy the integrity requirement described in the May 28, 2024 voluntary-carbon-markets announcement. A buyer's report that these credits represent only 500 kilograms of additional carbon-dioxide-equivalent reduction or removal uses the correct quantity.",
+    "answer": "false",
+    "choice": "true or false",
+    "classification": "Policy-Based Numerical Reasoning",
+    "explanation": "Each valid credit represents one tonne, so 500 credits represent 500 tonnes, or 500,000 kilograms, rather than 500 kilograms.",
+    "id": 6,
+    "evidence_quote": "one credit truly represents one tonne of carbon dioxide (or its equivalent) reduced or removed from the atmosphere, beyond what would have otherwise occurred."
+  },
+  {
+    "policy_name": "Biden-Harris Administration Announces $4 Billion in Tax Credits to Build Clean Energy Supply Chain, Drive Investments, and Lower Costs in Energy Communities",
+    "question_type": "q&a",
+    "question": "Under the process described in the March 29, 2024 48C announcement, a selected project proposes waiting three years to submit its certification information and then waiting three more years after certification to enter service. Identify both timing problems and describe the two-stage timeline the project should instead plan around.",
+    "answer": "The first proposed three-year wait exceeds the requirement to submit information to the 48C portal within two years to certify the selected project. The second proposed three-year wait exceeds the additional two-year period following project certification for placing the project in service. The plan should therefore distinguish timely certification-information submission from the later in-service milestone, anchor the second deadline to certification, and shorten both proposed waits to the respective two-year limits. Merely starting construction is not the stated in-service milestone.",
+    "classification": "Procedural/Institutional Implementation",
+    "explanation": "The source sets separate certification and in-service deadlines. The hypothetical exceeds each by one year and cannot treat them as one unrestricted development period.",
+    "id": 13,
+    "evidence_quote": "For selected projects to receive the tax credit, information will need to be submitted to the 48C portal within two years to certify the project. Within an additional two years following project certification, the project must be placed in service.",
+    "key_points": [
+      "Identify that the proposed three-year wait to submit certification information exceeds two years.",
+      "State that certification information must be submitted through the 48C portal within two years.",
+      "Identify that the proposed three-year post-certification wait exceeds the additional two-year period.",
+      "Anchor the second period to project certification rather than to the first application or construction start.",
+      "Identify placement in service as the second milestone, rather than merely beginning construction."
+    ]
+  },
+  {
+    "policy_name": "Biden-Harris Administration Announces $4 Billion in Tax Credits to Build Clean Energy Supply Chain, Drive Investments, and Lower Costs in Energy Communities",
+    "question_type": "multiple_choice",
+    "question": "An analyst uses the dollar allocations in the March 29, 2024 48C announcement: $2.7 billion for clean-energy manufacturing and recycling and $800 million for critical-materials recycling, processing, and refining. What is their combined allocation?",
+    "choice": {
+      "A": "$4.0 billion",
+      "B": "$2.78 billion",
+      "C": "$3.2 billion",
+      "D": "$3.5 billion"
+    },
+    "answer": "D",
+    "classification": "Policy-Based Numerical Reasoning",
+    "explanation": "$800 million equals $0.8 billion; $2.7 billion plus $0.8 billion is $3.5 billion. The question uses dollar amounts rather than rounded reported percentages.",
+    "id": 14,
+    "evidence_quote": "Clean energy manufacturing and recycling: $2.7 billion in tax credits (67% of round 1 tax credits)"
+  },
+  {
+    "policy_name": "Biden-Harris Administration Announces $4 Billion in Tax Credits to Build Clean Energy Supply Chain, Drive Investments, and Lower Costs in Energy Communities",
+    "question_type": "q&a",
+    "question": "A 48C program communications officer is preparing two announcements under the March 29, 2024 framework. One project has an allocation but is not certified and has not consented to identification; a second project has been certified. The officer also wants to require the first recipient to make its own public announcement as a condition of keeping its allocation. Explain what the officer should do about pre-certification disclosure, post-certification publication, voluntary recipient publicity, and effects on the allocation.",
+    "answer": "Do not identify the uncertified applicant or its project through the program without its consent. For the certified project, the framework requires publication of the organization's name and allocation amount after certification. The first recipient is not required to announce its allocation publicly at this stage, although it may choose to do so and contact DOE about voluntary participation. Participation in upcoming announcements does not affect its allocation, so publicity should not be made a condition of retaining it.",
+    "classification": "Procedural/Institutional Implementation",
+    "explanation": "The scenario distinguishes the program's consent restriction, the later mandatory publication, and the recipient's voluntary publicity choices.",
+    "id": 15,
+    "evidence_quote": "As required by statute, the §48C(e) program will publish the names of all organizations with certified projects and the amount of that allocation after projects are certified. Prior to certification, law prohibits the §48C(e) program from providing identifying information about allocation recipients or their projects without the applicant’s consent.",
+    "key_points": [
+      "Do not disclose identifying information about the uncertified recipient or project without applicant consent.",
+      "Publish the certified organization's name after project certification.",
+      "Publish the certified project's allocation amount after project certification.",
+      "Treat the uncertified recipient's own public announcement or participation as voluntary.",
+      "Do not condition the allocation on participation in upcoming announcements."
+    ]
+  },
+  {
+    "policy_name": "Biden-Harris Administration Announces $4 Billion in Tax Credits to Build Clean Energy Supply Chain, Drive Investments, and Lower Costs in Energy Communities",
+    "question_type": "true_or_false",
+    "question": "An uncertified 48C allocation recipient declines to join an upcoming voluntary DOE announcement. Under the March 29, 2024 announcement, declining that publicity opportunity does not by itself reduce the recipient's allocation.",
+    "answer": "true",
+    "choice": "true or false",
+    "classification": "Scenario-Based Decision-Making",
+    "explanation": "The source expressly says participation in upcoming announcements does not affect the allocation.",
+    "id": 16,
+    "evidence_quote": "Participation in upcoming announcements will not affect the recipient’s allocation in any way."
+  },
+  {
+    "policy_name": "Federal Support Opportunities to Remediate and Redevelop Energy Assets: Wide-Ranging Initiatives to Drive Investment Opportunities in Energy Communities",
+    "question_type": "multiple_choice",
+    "question": "A developer finds a retired coal plant in the Coal Redevelopment Opportunities Mapping Tool mentioned in DOE's energy-asset-redevelopment announcement. Based on that announcement alone, which conclusion is justified?",
+    "choice": {
+      "A": "The site qualifies for an EIR loan award; only the size of the loan remains to be determined.",
+      "B": "The site merits investigation as a potential redevelopment opportunity; map inclusion does not establish a loan award or tax-credit eligibility.",
+      "C": "The site has completed contamination assessment and cleanup because the coal map lists only redevelopment-ready locations.",
+      "D": "The site qualifies for the energy-community bonus tax credit because the coal map is the credit's eligibility determination."
+    },
+    "answer": "B",
+    "classification": "Scenario-Based Decision-Making",
+    "explanation": "The coal map screens potential opportunities. The announcement separately references a map for areas that may qualify for the bonus tax credit and does not make either map a funding decision.",
+    "id": 23,
+    "evidence_quote": "Additionally, explore which coal power plants that have been closed or set-to-retire that are relevant for potential redevelopment opportunities with our Coal Redevelopment Opportunities Mapping Tool found here."
+  },
+  {
+    "policy_name": "Federal Support Opportunities to Remediate and Redevelop Energy Assets: Wide-Ranging Initiatives to Drive Investment Opportunities in Energy Communities",
+    "question_type": "multiple_choice",
+    "question": "A town removes a still-operating legacy energy site from its initial modernization study solely because it believes DOE's energy-asset-redevelopment announcement discusses retired sites only. How should the study team assess that reason using the announcement?",
+    "choice": {
+      "A": "Retain the exclusion: the announcement describes operating sites as outside its redevelopment and modernization discussion.",
+      "B": "Reconsider the exclusion: the announcement discusses retired and operating sites, while eligibility for particular support still needs checking.",
+      "C": "Approve an EIR award immediately: the announcement makes every operating site eligible for guaranteed financing.",
+      "D": "Require closure before any study: the announcement makes retirement a prerequisite for considering modernization opportunities."
+    },
+    "answer": "B",
+    "classification": "Scenario-Based Decision-Making",
+    "explanation": "The announcement's broad discussion explicitly includes operating sites. That rebuts the town's premise but does not establish any particular site's program eligibility.",
+    "id": 24,
+    "evidence_quote": "There are thousands of retired and operating energy sites in communities throughout the United States waiting to be cleaned up and modernized."
+  },
+  {
+    "policy_name": "Federal Support Opportunities to Remediate and Redevelop Energy Assets: Wide-Ranging Initiatives to Drive Investment Opportunities in Energy Communities",
+    "question_type": "q&a",
+    "question": "A community's draft redevelopment plan says the DOE energy-assets announcement offers $250 billion in cleanup grants, that EIR and Brownfields are interchangeable, and that any local clean-energy project automatically earns the Energy Community Tax Credit Bonus. Correct the financing mechanism and describe which support to investigate for capital, uncertain contamination, and clean-energy development, while explaining the eligibility limit of this announcement.",
+    "answer": "The $250 billion figure is an upper limit on loan authority supported by up to $5 billion in EIR credit subsidy, not a cleanup-grant pool. Investigate EIR loan guarantees for eligible energy-infrastructure redevelopment capital. Investigate EPA Brownfields Grants for assessment and cleanup when known or unknown contamination hinders redevelopment. Investigate applicable clean-energy tax credits and the Energy Community Tax Credit Bonus for the clean-energy project. These tools have complementary roles, and the announcement does not establish this particular project's eligibility or automatically award the bonus; the relevant program requirements must be checked.",
+    "classification": "Scenario-Based Decision-Making",
+    "explanation": "The response applies the source's distinct financing, cleanup, and tax-incentive roles to errors in a concrete plan and preserves its eligibility qualifications.",
+    "id": 25,
+    "evidence_quote": "the IRA makes available up to $5 billion in EIR credit subsidy to support up to $250 billion in loan authority, which can aid in the remediation, repurposing, and redevelopment of eligible energy infrastructure sites.",
+    "key_points": [
+      "Correct $250 billion to an upper limit on loan authority rather than a cleanup-grant pool, supported by up to $5 billion in credit subsidy.",
+      "Identify EIR loan guarantees as a capital-support option for eligible energy-infrastructure redevelopment.",
+      "Identify EPA Brownfields Grants for contamination assessment and cleanup, including unknown contamination.",
+      "Identify applicable clean-energy tax credits and the Energy Community Tax Credit Bonus as options to investigate for clean-energy development.",
+      "Reject automatic site-specific bonus eligibility or award based solely on this announcement."
+    ]
+  },
+  {
+    "policy_name": "Federal Support Opportunities to Remediate and Redevelop Energy Assets: Wide-Ranging Initiatives to Drive Investment Opportunities in Energy Communities",
+    "question_type": "true_or_false",
+    "question": "For a hypothetical scale comparison only, a planner calculates that 1% of the maximum EIR loan authority in DOE's energy-asset-redevelopment announcement equals $5 billion. The calculation is correct.",
+    "answer": "false",
+    "choice": "true or false",
+    "classification": "Policy-Based Numerical Reasoning",
+    "explanation": "The maximum loan authority is $250 billion. One percent is $2.5 billion; $5 billion is the separately stated maximum credit subsidy, not 1% of the loan authority.",
+    "id": 26,
+    "evidence_quote": "up to $5 billion in EIR credit subsidy to support up to $250 billion in loan authority"
+  },
+  {
+    "policy_name": "Biden-Harris Administration Announces Historic Investments to Support America’s Energy and Industrial Communities",
+    "question_type": "q&a",
+    "question": "Apply the February 13, 2023 announcement's Low-Income Communities Bonus Credit rules to two hypothetical projects that otherwise meet the applicable requirements. Project A is installed on Tribal land but is not part of a qualified low-income residential building and directs 40% of its electricity's financial benefits to low-income households. Project B is not on Tribal land or in a low-income community, is not part of a qualified low-income residential building, and directs 55% of those benefits to low-income households. Which stated bonus category and percentage-point increase fit each project, and what distinction matters?",
+    "answer": "Project A fits the Tribal-land category and the stated 10-percentage-point increase. Its 40% benefit share does not meet the alternative 50% threshold for the 20-percentage-point category, and the scenario excludes the qualified-building route. Project B meets the benefit-based route to the 20-percentage-point increase because 55% exceeds 50%; that route is described separately from location on Tribal land or in a low-income community. These are percentage-point increases, not multipliers of an existing credit, and the scenario's other-eligibility assumption does not turn this category assessment into an actual award decision.",
+    "classification": "Scenario-Based Decision-Making",
+    "explanation": "The scenario tests the distinction between a location-based 10-point category and a financial-benefit-based 20-point category without assuming that the benefits add together.",
+    "id": 30,
+    "evidence_quote": "Beginning in 2023, a 10 percentage point increase is available to eligible solar and wind facilities that are installed in low-income communities or on Tribal land. A 20 percentage point credit increase will be available to clean energy projects that serve a qualified low-income residential building or provide at least 50% of the financial benefits of electricity generated to low-income households.",
+    "key_points": [
+      "Assign Project A to the Tribal-land category.",
+      "Give Project A the stated 10-percentage-point increase.",
+      "Explain that A's 40% benefit share does not meet the 50% threshold for the benefit-based 20-point category.",
+      "Explain that Project B's 55% benefit share meets the separate at-least-50% route despite its stated location.",
+      "Give Project B the stated 20-percentage-point increase rather than adding the 10- and 20-point categories."
+    ]
+  },
+  {
+    "policy_name": "Biden-Harris Administration Announces Historic Investments to Support America’s Energy and Industrial Communities",
+    "question_type": "multiple_choice",
+    "question": "Using the initial 2023 bonus-credit capacity allocations in the February 13, 2023 energy-and-industrial-communities announcement, an analyst combines the 200 MW category for Tribal-land projects and the 200 MW category for qualified low-income residential buildings. What total capacity do these two categories receive?",
+    "choice": {
+      "A": "200 MW",
+      "B": "400 MW",
+      "C": "1,400 MW",
+      "D": "900 MW"
+    },
+    "answer": "B",
+    "classification": "Policy-Based Numerical Reasoning",
+    "explanation": "The two distinct 200 MW allocations sum to 400 MW. The question concerns category allocations, not eligibility to stack awards for an individual project.",
+    "id": 31,
+    "evidence_quote": "200 MW for projects on Tribal lands, 200 MW for projects that are part of qualified low-income residential buildings"
+  },
+  {
+    "policy_name": "Biden-Harris Administration Announces Historic Investments to Support America’s Energy and Industrial Communities",
+    "question_type": "q&a",
+    "question": "A small manufacturer in an energy community is preparing for the funding opportunity described in the February 13, 2023 energy-and-industrial-communities announcement. It is not minority-owned, plans to omit a Community Benefits Plan, and intends to send its first project material as a full application on June 8 without a concept paper. Identify the relevant program and correct these assumptions about priority, required materials, and the two submission deadlines.",
+    "answer": "The relevant opportunity is the Advanced Energy Manufacturing and Recycling Grant Program for small and medium manufacturers. Priority for minority-owned firms is not stated as an exclusion of all other firms, although this announcement alone cannot establish the applicant's eligibility. All applicants must submit a Community Benefits Plan. A concept paper is required by March 14, 2023 at 5 p.m. ET, followed by the full application by June 8, 2023 at 5 p.m. ET. Waiting until June 8 to provide the first material would miss the concept-paper requirement.",
+    "classification": "Procedural/Institutional Implementation",
+    "explanation": "The response applies the announcement's distinct program, priority, universal-plan, and staged-submission provisions without guaranteeing eligibility or funding.",
+    "id": 32,
+    "evidence_quote": "The program will prioritize applications from minority-owned firms, and all applicants are required to submit a Community Benefits Plan demonstrating the project’s impact and benefits to the host community and region.",
+    "key_points": [
+      "Identify the Advanced Energy Manufacturing and Recycling Grant Program as the relevant opportunity.",
+      "Distinguish priority for minority-owned firms from a source-stated prohibition on other applicants.",
+      "Require a Community Benefits Plan from this applicant because the requirement applies to all applicants.",
+      "Require a concept paper by March 14, 2023 at 5 p.m. ET.",
+      "Give June 8, 2023 at 5 p.m. ET as the full-application deadline and reject treating that as a substitute for the earlier concept paper."
+    ]
+  },
+  {
+    "policy_name": "Biden-Harris Administration Announces Historic Investments to Support America’s Energy and Industrial Communities",
+    "question_type": "true_or_false",
+    "question": "Under the grant deadlines stated in the February 13, 2023 energy-and-industrial-communities announcement, a manufacturer submitting its required concept paper at 4 p.m. ET on March 14, 2023 and its full application at 4 p.m. ET on June 8, 2023 meets both stated submission deadlines; this timing alone does not establish that it will receive an award.",
+    "answer": "true",
+    "choice": "true or false",
+    "classification": "Procedural/Institutional Implementation",
+    "explanation": "Each hypothetical submission precedes its source-stated 5 p.m. deadline on the relevant day. Timeliness is distinct from a funding decision.",
+    "id": 33,
+    "evidence_quote": "Concept papers are required and are due on March 14, 2023 at 5 p.m. ET, with full applications due on June 8, 2023 at 5 p.m. ET."
+  },
+  {
+    "policy_name": "Biden- Harris Administration Supports Local Projects to Save Energy and Tackle the Climate Crisis as part of Investing in America Agenda",
+    "question_type": "multiple_choice",
+    "question": "An EECBG-eligible town needs help designing an energy-efficiency strategy before it has a completed project plan. Under the February 28, 2024 announcement, which next step is consistent with the available assistance?",
+    "choice": {
+      "A": "Seek DOE technical assistance for the application and strategy, including Blueprints or cohort training, while developing the project plan.",
+      "B": "Wait for a construction award because the announced technical assistance cannot support application preparation.",
+      "C": "Abandon strategy development and apply only for equipment because the announced assistance excludes planning activities.",
+      "D": "Complete the project plan without DOE support because the announced technical assistance is limited to installed equipment."
+    },
+    "answer": "A",
+    "classification": "Scenario-Based Decision-Making",
+    "explanation": "The source explicitly supports application preparation, strategies, and project planning. It does not require the town to finish those tasks before seeking assistance.",
+    "id": 34,
+    "evidence_quote": "DOE offers technical assistance to EECBG Program eligible entities to prepare their applications and energy efficiency and conservation strategies, develop project plans, and identify opportunities in their communities."
+  },
+  {
+    "policy_name": "Biden- Harris Administration Supports Local Projects to Save Energy and Tackle the Climate Crisis as part of Investing in America Agenda",
+    "question_type": "multiple_choice",
+    "question": "The February 28, 2024 EECBG announcement describes solar installations between 500 kW and 1 MW for Cuyahoga County school buildings. For a hypothetical plan with exactly one installation in each of the five named districts, each at the lower end, what is the combined capacity?",
+    "choice": {
+      "A": "1.0 MW",
+      "B": "0.5 MW",
+      "C": "5.0 MW",
+      "D": "2.5 MW"
+    },
+    "answer": "D",
+    "classification": "Policy-Based Numerical Reasoning",
+    "explanation": "The hypothetical specifies five 500 kW installations: 2,500 kW, or 2.5 MW. It does not claim the actual program commits to exactly one system per district.",
+    "id": 35,
+    "evidence_quote": "Cuyahoga County, OH will subgrant its award to five Northeast Ohio school districts in energy justice communities to install between 500 kW–1 MW of solar panels on school buildings."
+  },
+  {
+    "policy_name": "Biden- Harris Administration Supports Local Projects to Save Energy and Tackle the Climate Crisis as part of Investing in America Agenda",
+    "question_type": "q&a",
+    "question": "As of February 28, 2024, an EECBG-eligible town wants equipment rebates with less grant administration and might instead choose a traditional grant with in-person implementation support. Using that day's announcement, identify the two application routes, the stated function of the voucher route, the route associated with a Community Energy Fellow, and the separate local-government application and Fellow-support deadlines.",
+    "answer": "The town can consider a traditional grant or a voucher through the Voucher Portal for equipment rebates or technical assistance. The streamlined voucher process is described as reducing application and management burden. Community Energy Fellow in-person support is offered for those pursuing traditional grants, not described here as an entitlement under the voucher route. The local-government formula-fund deadline is April 30, 2024, whereas the deadline to apply for in-person Fellow support is March 5, 2024. The town should plan around both deadlines if it chooses that support route.",
+    "classification": "Procedural/Institutional Implementation",
+    "explanation": "The scenario requires choosing and scheduling among distinct routes and support options rather than applying the later grant deadline to all assistance.",
+    "id": 36,
+    "evidence_quote": "Local governments and Tribes have the unique option to apply for traditional grants or vouchers for equipment rebates or technical assistance. In November 2023, DOE launched the Voucher Portal to submit voucher applications.",
+    "key_points": [
+      "Identify the choice between a traditional grant and a voucher for the eligible town.",
+      "Connect the Voucher Portal to equipment rebates or technical assistance and reduced administrative burden.",
+      "Associate Community Energy Fellow in-person support with those pursuing traditional grants.",
+      "State April 30, 2024 as the local-government formula-fund application deadline.",
+      "State March 5, 2024 as the separate deadline for in-person Fellow support."
+    ]
+  },
+  {
+    "policy_name": "Biden- Harris Administration Supports Local Projects to Save Energy and Tackle the Climate Crisis as part of Investing in America Agenda",
+    "question_type": "true_or_false",
+    "question": "A local government pursuing a traditional EECBG grant plans to request Community Energy Fellow in-person support on April 1, 2024. Under the dates stated in the February 28, 2024 announcement, its request meets the Fellow-support deadline because it precedes the April 30 local-government grant deadline.",
+    "answer": "false",
+    "choice": "true or false",
+    "classification": "Procedural/Institutional Implementation",
+    "explanation": "The announcement gives March 5, 2024 as the deadline for in-person Fellow support. A later grant deadline does not extend that separate support deadline.",
+    "id": 37,
+    "evidence_quote": "the option to apply for in-house implementation support via a Community Energy Fellow (for those pursuing traditional grants). The deadline for grantees to apply for this in-person support is March 5, 2024."
+  }
+]

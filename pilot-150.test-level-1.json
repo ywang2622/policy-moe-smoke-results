@@ -1,0 +1,217 @@
+[
+  {
+    "policy_name": "Biden-Harris Administration Releases Joint Policy Statement and Principles on Voluntary Carbon Markets",
+    "question_type": "multiple_choice",
+    "question": "In the May 28, 2024 announcement on voluntary carbon markets, what quantity is one carbon credit intended to represent?",
+    "choice": {
+      "A": "One kilogram of carbon dioxide, or its equivalent, reduced or removed beyond what would otherwise occur.",
+      "B": "Ten tonnes of carbon dioxide, or its equivalent, reduced or removed beyond what would otherwise occur.",
+      "C": "One hundred tonnes of carbon dioxide, or its equivalent, reduced or removed beyond what would otherwise occur.",
+      "D": "One tonne of carbon dioxide, or its equivalent, reduced or removed beyond what would otherwise occur."
+    },
+    "answer": "D",
+    "classification": "Terminology Recognition",
+    "explanation": "The announcement specifies one tonne of carbon dioxide or equivalent and requires the reduction or removal to exceed the counterfactual outcome.",
+    "id": 5,
+    "evidence_quote": "Critically, stakeholders must be certain that one credit truly represents one tonne of carbon dioxide (or its equivalent) reduced or removed from the atmosphere, beyond what would have otherwise occurred."
+  },
+  {
+    "policy_name": "Biden-Harris Administration Releases Joint Policy Statement and Principles on Voluntary Carbon Markets",
+    "question_type": "true_or_false",
+    "question": "The May 28, 2024 voluntary-carbon-markets announcement identifies DOE's Carbon Dioxide Removal Purchase Pilot Prize as a $35 million initiative.",
+    "answer": "true",
+    "choice": "true or false",
+    "classification": "Article/Date Memorization",
+    "explanation": "The announcement explicitly gives the prize amount as $35 million.",
+    "id": 6,
+    "evidence_quote": "the announcement by the Department of Energy of the semifinalists for its $35 million Carbon Dioxide Removal Purchase Pilot Prize."
+  },
+  {
+    "policy_name": "Biden-Harris Administration Releases Joint Policy Statement and Principles on Voluntary Carbon Markets",
+    "question_type": "multiple_choice",
+    "question": "What publication date appears on the DOE announcement titled 'Biden-Harris Administration Releases Joint Policy Statement and Principles on Voluntary Carbon Markets'?",
+    "choice": {
+      "A": "June 28, 2024",
+      "B": "May 28, 2023",
+      "C": "April 28, 2024",
+      "D": "May 28, 2024"
+    },
+    "answer": "D",
+    "classification": "Article/Date Memorization",
+    "explanation": "The source's publication-date field is May 28, 2024.",
+    "id": 7,
+    "evidence_quote": "May 28, 2024"
+  },
+  {
+    "policy_name": "Biden-Harris Administration Announces $4 Billion in Tax Credits to Build Clean Energy Supply Chain, Drive Investments, and Lower Costs in Energy Communities",
+    "question_type": "multiple_choice",
+    "question": "According to the March 29, 2024 announcement of $4 billion in 48C tax credits, which DOE office manages the program on behalf of IRS and Treasury?",
+    "choice": {
+      "A": "Office of Manufacturing & Energy Supply Chains (MESC)",
+      "B": "Office of Energy Efficiency and Renewable Energy (EERE)",
+      "C": "Office of State and Community Energy Programs (SCEP)",
+      "D": "Office of Economic Impact and Diversity (ED)"
+    },
+    "answer": "A",
+    "classification": "Organization Identification",
+    "explanation": "The announcement explicitly assigns this management role to MESC.",
+    "id": 20,
+    "evidence_quote": "DOE’s Office of Manufacturing & Energy Supply Chains (MESC) manages the § 48C Program on behalf of IRS and Treasury."
+  },
+  {
+    "policy_name": "Biden-Harris Administration Announces $4 Billion in Tax Credits to Build Clean Energy Supply Chain, Drive Investments, and Lower Costs in Energy Communities",
+    "question_type": "true_or_false",
+    "question": "The March 29, 2024 48C announcement assigns $500 million of Round 1 tax credits to critical materials recycling, processing, and refining.",
+    "answer": "false",
+    "choice": "true or false",
+    "classification": "Article/Date Memorization",
+    "explanation": "Critical materials received $800 million. The $500 million figure belongs to industrial decarbonization.",
+    "id": 21,
+    "evidence_quote": "Critical materials recycling, processing, and refining: $800 million in tax credits (20% of round 1 tax credits)"
+  },
+  {
+    "policy_name": "Biden-Harris Administration Announces $4 Billion in Tax Credits to Build Clean Energy Supply Chain, Drive Investments, and Lower Costs in Energy Communities",
+    "question_type": "multiple_choice",
+    "question": "According to the March 29, 2024 48C announcement, in what year did the American Recovery and Reinvestment Act establish the program?",
+    "choice": {
+      "A": "2022",
+      "B": "2007",
+      "C": "2009",
+      "D": "2021"
+    },
+    "answer": "C",
+    "classification": "Article/Date Memorization",
+    "explanation": "The source distinguishes establishment under the 2009 act from expansion under the 2022 Inflation Reduction Act.",
+    "id": 22,
+    "evidence_quote": "Established by the American Recovery and Reinvestment Act of 2009, the § 48C Program was expanded with a $10 billion investment under the Inflation Reduction Act of 2022."
+  },
+  {
+    "policy_name": "Federal Support Opportunities to Remediate and Redevelop Energy Assets: Wide-Ranging Initiatives to Drive Investment Opportunities in Energy Communities",
+    "question_type": "multiple_choice",
+    "question": "Which national laboratory published the report described in DOE's 'Federal Support Opportunities to Remediate and Redevelop Energy Assets' announcement?",
+    "choice": {
+      "A": "National Renewable Energy Laboratory",
+      "B": "Argonne National Laboratory",
+      "C": "Oak Ridge National Laboratory",
+      "D": "Pacific Northwest National Laboratory"
+    },
+    "answer": "D",
+    "classification": "Organization Identification",
+    "explanation": "The announcement identifies PNNL as the report's publisher, assisted by DOE's Office of Policy.",
+    "id": 35,
+    "evidence_quote": "With assistance from the U.S. Department of Energy’s Office of Policy, the Pacific Northwest National Laboratory, a U.S. Department of Energy National Laboratory, published a report titled “Federal Support Opportunities to Remediate and Redevelop Energy Assets,”"
+  },
+  {
+    "policy_name": "Federal Support Opportunities to Remediate and Redevelop Energy Assets: Wide-Ranging Initiatives to Drive Investment Opportunities in Energy Communities",
+    "question_type": "true_or_false",
+    "question": "The DOE energy-asset-redevelopment announcement states that up to $5 billion in EIR credit subsidy supports up to $250 billion in loan authority.",
+    "answer": "true",
+    "choice": "true or false",
+    "classification": "Article/Date Memorization",
+    "explanation": "Both limits and their subsidy-versus-loan-authority distinction are explicitly stated.",
+    "id": 36,
+    "evidence_quote": "the IRA makes available up to $5 billion in EIR credit subsidy to support up to $250 billion in loan authority"
+  },
+  {
+    "policy_name": "Federal Support Opportunities to Remediate and Redevelop Energy Assets: Wide-Ranging Initiatives to Drive Investment Opportunities in Energy Communities",
+    "question_type": "multiple_choice",
+    "question": "In DOE's energy-asset-redevelopment announcement, what does EIR stand for?",
+    "choice": {
+      "A": "Energy Infrastructure Reinvestment",
+      "B": "Environmental Infrastructure Recovery",
+      "C": "Energy Investment Resilience",
+      "D": "Energy Infrastructure Remediation"
+    },
+    "answer": "A",
+    "classification": "Terminology Recognition",
+    "explanation": "The source expands EIR as Energy Infrastructure Reinvestment.",
+    "id": 37,
+    "evidence_quote": "Energy Infrastructure Reinvestment (EIR) loan guarantees"
+  },
+  {
+    "policy_name": "Biden-Harris Administration Announces Historic Investments to Support America’s Energy and Industrial Communities",
+    "question_type": "multiple_choice",
+    "question": "In the February 13, 2023 energy-and-industrial-communities announcement, what annual capacity is allocated bonus credit under the Low-Income Communities Bonus Credit Program?",
+    "choice": {
+      "A": "4.0 gigawatts of eligible solar and wind capacity",
+      "B": "0.7 gigawatts of eligible solar and wind capacity",
+      "C": "1.8 gigawatts of eligible solar and wind capacity",
+      "D": "1.6 gigawatts of eligible solar and wind capacity"
+    },
+    "answer": "C",
+    "classification": "Article/Date Memorization",
+    "explanation": "The source gives 1.8 GW per year; 700 MW instead appears as an allocation for individual categories.",
+    "id": 44,
+    "evidence_quote": "which will allocate the bonus credit to 1.8 gigawatts (GW) of eligible solar and wind capacity per year."
+  },
+  {
+    "policy_name": "Biden-Harris Administration Announces Historic Investments to Support America’s Energy and Industrial Communities",
+    "question_type": "true_or_false",
+    "question": "The February 13, 2023 announcement set June 8, 2023 as the concept-paper deadline for the Advanced Energy Manufacturing and Recycling Grant Program funding opportunity.",
+    "answer": "false",
+    "choice": "true or false",
+    "classification": "Article/Date Memorization",
+    "explanation": "Concept papers were due March 14, 2023; June 8 was the full-application deadline.",
+    "id": 45,
+    "evidence_quote": "Concept papers are required and are due on March 14, 2023 at 5 p.m. ET, with full applications due on June 8, 2023 at 5 p.m. ET."
+  },
+  {
+    "policy_name": "Biden-Harris Administration Announces Historic Investments to Support America’s Energy and Industrial Communities",
+    "question_type": "multiple_choice",
+    "question": "According to the February 13, 2023 energy-and-industrial-communities announcement, which DOE office administers the Low-Income Communities Bonus Credit Program?",
+    "choice": {
+      "A": "Office of State and Community Energy Programs",
+      "B": "Office of Policy",
+      "C": "Office of Economic Impact and Diversity",
+      "D": "Office of Manufacturing and Energy Supply Chains"
+    },
+    "answer": "C",
+    "classification": "Organization Identification",
+    "explanation": "The source assigns this bonus-credit program to the Office of Economic Impact and Diversity, separately from the MESC roles elsewhere in the announcement.",
+    "id": 46,
+    "evidence_quote": "DOE’s Office of Economic Impact and Diversity will administer the Low-Income Communities Bonus Credit Program"
+  },
+  {
+    "policy_name": "Biden- Harris Administration Supports Local Projects to Save Energy and Tackle the Climate Crisis as part of Investing in America Agenda",
+    "question_type": "multiple_choice",
+    "question": "Which DOE office is identified with the Energy Efficiency and Conservation Block Grant Program in the February 28, 2024 local-projects announcement?",
+    "choice": {
+      "A": "Office of Policy",
+      "B": "Office of Economic Impact and Diversity (ED)",
+      "C": "Office of Manufacturing and Energy Supply Chains (MESC)",
+      "D": "Office of State and Community Energy Programs (SCEP)"
+    },
+    "answer": "D",
+    "classification": "Organization Identification",
+    "explanation": "The announcement locates the EECBG Program in SCEP.",
+    "id": 47,
+    "evidence_quote": "The EECBG Program, through the DOE Office of State and Community Energy Programs (SCEP)"
+  },
+  {
+    "policy_name": "Biden- Harris Administration Supports Local Projects to Save Energy and Tackle the Climate Crisis as part of Investing in America Agenda",
+    "question_type": "true_or_false",
+    "question": "The February 28, 2024 EECBG announcement gives May 31, 2025 as the extended Tribal application deadline and April 30, 2024 as the local-government deadline.",
+    "answer": "true",
+    "choice": "true or false",
+    "classification": "Article/Date Memorization",
+    "explanation": "These are the two source-stated deadlines, including Puerto Rican municipios within the local-government group.",
+    "id": 48,
+    "evidence_quote": "The deadline for Tribes to apply for EECBG Program formula funds has been extended to May 31, 2025. The deadline for local governments – including Puerto Rican municipios – is April 30, 2024."
+  },
+  {
+    "policy_name": "Biden- Harris Administration Supports Local Projects to Save Energy and Tackle the Climate Crisis as part of Investing in America Agenda",
+    "question_type": "multiple_choice",
+    "question": "How much does the February 28, 2024 EECBG announcement say the fourth round will distribute, as distinct from the total awarded since October 2023?",
+    "choice": {
+      "A": "$2.999170 million",
+      "B": "$17.28 million",
+      "C": "$91.51 million",
+      "D": "$1.572930 million"
+    },
+    "answer": "B",
+    "classification": "Article/Date Memorization",
+    "explanation": "The fourth-round amount is $17.28 million; $91.51 million is the cumulative total, and the other figures are individual awards described later.",
+    "id": 49,
+    "evidence_quote": "The EECBG Program will distribute $17.28 million to four states, 23 local governments, 2 Tribes, and the territory of Guam"
+  }
+]

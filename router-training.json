@@ -1,0 +1,41 @@
+{
+  "config": {
+    "dataset_sha256": "40f6224d09abfc3b690678c9594c97c50a17eac4ff2f11147f3473b17aaa7c09",
+    "base_model": "Qwen/Qwen2.5-7B-Instruct",
+    "revision": "a09a35458c702b33eeacc393d103063234e8bc28",
+    "quantized_nf4": true,
+    "epochs": 3,
+    "router_epochs": 4,
+    "lr": 5e-05,
+    "weight_decay": 0.01,
+    "rank": 16,
+    "alpha": 32,
+    "dropout": 0.05,
+    "micro_batch": 1,
+    "effective_batch": 16,
+    "expert_max_length": 2048,
+    "router_max_length": 512,
+    "seed": 260412995,
+    "router_objective": "frozen-expert token-mixture NLL; no cognitive-level target",
+    "router_features": "last prompt token of frozen base, final hidden layer",
+    "resolved_revision": "a09a35458c702b33eeacc393d103063234e8bc28"
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "mixture_nll": 1.9899320812517656
+    },
+    {
+      "epoch": 2,
+      "mixture_nll": 1.8580850665939266
+    },
+    {
+      "epoch": 3,
+      "mixture_nll": 1.8145130309508222
+    },
+    {
+      "epoch": 4,
+      "mixture_nll": 1.8031620070966268
+    }
+  ]
+}

@@ -3,193 +3,261 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A source-grounded 125-question PolicyMoE pilot dataset and an earlier Qwen2.5-7B execution test inspired by PolicyLLM.">
-  <title>PolicyMoE — 125-question pilot</title>
+  <meta name="description" content="A small, honest PolicyMoE experiment: 150 source-grounded policy questions, real Qwen2.5-7B GPU training, learned routing, and held-out results.">
+  <meta property="og:title" content="We trained PolicyMoE. Here’s the honest result.">
+  <meta property="og:description" content="150 source-grounded questions, real Qwen2.5-7B training, a learned router, and held-out results—without inflated claims.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ywang2622.github.io/policy-moe-smoke-results/">
+  <meta property="og:image" content="https://ywang2622.github.io/policy-moe-smoke-results/social-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <title>PolicyMoE — What we built and what happened</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="hero">
+  <header class="hero" id="top">
     <nav class="nav wrap" aria-label="Primary navigation">
-      <a class="brand" href="#top" aria-label="PolicyMoE results home">Policy<span>MoE</span></a>
+      <a class="brand" href="#top">Policy<span>MoE</span></a>
       <div class="nav-links">
         <a href="#results">Results</a>
-        <a href="#dataset">Dataset</a>
-        <a href="#method">Method</a>
-        <a href="https://arxiv.org/abs/2604.12995">Paper ↗</a>
+        <a href="#router">Router</a>
+        <a href="#questions">Questions</a>
+        <a href="#files">Files</a>
       </div>
     </nav>
 
-    <div class="hero-grid wrap" id="top">
+    <div class="hero-grid wrap">
       <div>
-        <div class="eyebrow"><span class="dot"></span> Dataset v2 ready</div>
-        <h1>A larger, leakage-aware PolicyMoE pilot.</h1>
-        <p class="lede">We expanded the project to 125 source-grounded questions from 25 U.S. Department of Energy documents: 100 for training and 25 for held-out testing. The earlier 30-question Qwen run remains below as an execution check, not a benchmark.</p>
+        <p class="eyebrow"><span class="dot"></span> GPU run complete · October 16, 2026</p>
+        <h1>We trained it.<br>Here’s what actually happened.</h1>
+        <p class="lede">Starting from 25 public U.S. Department of Energy documents, we built 150 policy questions, trained Qwen2.5-7B with one shared LoRA and three specialist LoRAs, learned a top-1 router, and tested everything on five documents the models never trained on.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#dataset">See the new dataset</a>
-          <a class="button secondary" href="#results">Earlier GPU results</a>
-          <a class="button secondary" href="pilot-125.dataset.json">Download dataset JSON</a>
+          <a class="button primary" href="#results">See the results</a>
+          <a class="button secondary" href="#questions">Read sample questions</a>
+          <a class="button secondary" href="pilot-150.dataset.json">Download the dataset</a>
         </div>
       </div>
       <aside class="run-card" aria-label="Run summary">
-        <div class="run-status"><span></span> DATASET COMPLETE</div>
+        <div class="run-status"><span></span> TRAINING COMPLETE</div>
         <dl>
-          <div><dt>Documents</dt><dd>25 DOE policies</dd></div>
-          <div><dt>Dataset</dt><dd>125 questions</dd></div>
-          <div><dt>Train / test</dt><dd>100 / 25</dd></div>
-          <div><dt>Reasoning levels</dt><dd>3</dd></div>
+          <div><dt>Source documents</dt><dd>25 DOE policies</dd></div>
+          <div><dt>Questions</dt><dd>150 total</dd></div>
+          <div><dt>Train / test</dt><dd>100 / 50</dd></div>
+          <div><dt>Held-out documents</dt><dd>5</dd></div>
+          <div><dt>Model</dt><dd>Qwen2.5-7B</dd></div>
+          <div><dt>Hardware</dt><dd>NVIDIA A10</dd></div>
           <div><dt>Validation</dt><dd>18 checks passed</dd></div>
-          <div><dt>Qwen v2 run</dt><dd>Not run yet</dd></div>
         </dl>
       </aside>
     </div>
   </header>
 
   <main>
-    <section class="notice wrap" aria-label="Important limitation">
-      <div class="notice-mark">!</div>
-      <div><strong>Two project stages are shown.</strong> The 125-question dataset is complete but has not been used for a new GPU run. The scores below come only from the earlier 30-question smoke test, where six questions were held out.</div>
-    </section>
-
-    <section class="section wrap" id="dataset">
-      <div class="section-head">
-        <div><p class="kicker">Dataset v2</p><h2>100 training questions. 25 held-out tests.</h2></div>
-        <p>Each test document is completely excluded from training. Related Section 48C documents are grouped together to reduce policy-family leakage.</p>
-      </div>
-      <div class="stats-grid">
-        <article class="stat-card"><strong>25</strong><span>source documents</span></article>
-        <article class="stat-card"><strong>50</strong><span>Level 1 · facts</span></article>
-        <article class="stat-card"><strong>50</strong><span>Level 2 · understanding</span></article>
-        <article class="stat-card"><strong>25</strong><span>Level 3 · application</span></article>
-      </div>
-      <div class="reading">
-        <h3>What is complete?</h3>
-        <p>All 125 questions include source evidence, unique IDs, and validated formats. The held-out set contains 10 Level 1, 10 Level 2, and 5 Level 3 questions. Two open-ended test items include five-point judging rubrics. All 18 automated pipeline checks pass.</p>
-      </div>
-      <div class="reading next-run">
-        <h3>What comes next?</h3>
-        <p>Train the frozen Qwen baseline comparison, the single shared LoRA, three level-specialist LoRAs, and the learned linear top-1 router on the 100-question split; then evaluate all systems on the same 25 held-out questions.</p>
-      </div>
+    <section class="verdict wrap" aria-label="Main finding">
+      <p class="verdict-label">The honest result</p>
+      <p><strong>PolicyMoE did not beat the simpler systems on this small test.</strong> The pipeline worked, the experts trained, and the router learned a meaningful pattern—but the frozen model remained strongest on Levels 1 and 2. That is a useful result, not a failure to hide.</p>
     </section>
 
     <section class="section wrap" id="results">
       <div class="section-head">
-        <div><p class="kicker">Earlier 30-question smoke test</p><h2>Three systems, six held-out questions</h2></div>
-        <p>Accuracy covers multiple-choice and true/false items. The open Level 3 answer is excluded until two-model judging is run.</p>
+        <div><p class="kicker">Held-out evaluation</p><h2>Three systems. The same 50 questions.</h2></div>
+        <p>These are objective scores for multiple-choice and true/false questions. Seven open-ended Level 3 responses are still unscored because the planned two-model judging step was not configured.</p>
       </div>
 
-      <div class="result-grid">
-        <article class="result-card">
-          <div class="system-label">Frozen baseline</div>
-          <h3>Qwen only</h3>
-          <div class="score-row"><span>L1 · facts</span><strong>0%</strong></div>
-          <div class="bar"><i style="width:0%"></i></div>
-          <div class="score-row"><span>L2 · understanding</span><strong>100%</strong></div>
-          <div class="bar"><i style="width:100%"></i></div>
-          <div class="score-row"><span>L3 · application</span><strong>100%</strong></div>
-          <div class="bar"><i style="width:100%"></i></div>
-        </article>
+      <div class="heatmap-figure" role="img" aria-label="Accuracy heatmap comparing frozen Qwen, single LoRA, and PolicyMoE across three cognitive levels">
+        <div class="figure-title">
+          <div><h3>Objective accuracy by cognitive level</h3><p>Paper-inspired performance matrix · darker cells mean higher accuracy</p></div>
+          <span>n = 43 scored items</span>
+        </div>
+        <div class="heatmap-grid">
+          <div class="corner"></div>
+          <div class="col-label">Level 1<br><small>15 items</small></div>
+          <div class="col-label">Level 2<br><small>15 items</small></div>
+          <div class="col-label">Level 3<br><small>13 objective</small></div>
 
-        <article class="result-card winner">
-          <div class="system-label">Shared adapter</div>
-          <h3>Single LoRA</h3>
-          <div class="score-row"><span>L1 · facts</span><strong>50%</strong></div>
-          <div class="bar"><i style="width:50%"></i></div>
-          <div class="score-row"><span>L2 · understanding</span><strong>100%</strong></div>
-          <div class="bar"><i style="width:100%"></i></div>
-          <div class="score-row"><span>L3 · application</span><strong>100%</strong></div>
-          <div class="bar"><i style="width:100%"></i></div>
-        </article>
+          <div class="row-label"><strong>Frozen Qwen</strong><small>No training</small></div>
+          <div class="heat-cell heat-73"><strong>73.3%</strong><span>11 / 15</span></div>
+          <div class="heat-cell heat-100"><strong>100.0%</strong><span>15 / 15</span></div>
+          <div class="heat-cell heat-77"><strong>76.9%</strong><span>10 / 13</span></div>
 
-        <article class="result-card moe">
-          <div class="system-label">Learned top-1 router</div>
-          <h3>PolicyMoE</h3>
-          <div class="score-row"><span>L1 · facts</span><strong>0%</strong></div>
-          <div class="bar"><i style="width:0%"></i></div>
-          <div class="score-row"><span>L2 · understanding</span><strong>100%</strong></div>
-          <div class="bar"><i style="width:100%"></i></div>
-          <div class="score-row"><span>L3 · application</span><strong>100%</strong></div>
-          <div class="bar"><i style="width:100%"></i></div>
-        </article>
+          <div class="row-label"><strong>Single LoRA</strong><small>All training data</small></div>
+          <div class="heat-cell heat-67"><strong>66.7%</strong><span>10 / 15</span></div>
+          <div class="heat-cell heat-93"><strong>93.3%</strong><span>14 / 15</span></div>
+          <div class="heat-cell heat-77"><strong>76.9%</strong><span>10 / 13</span></div>
+
+          <div class="row-label"><strong>PolicyMoE</strong><small>Learned top-1 router</small></div>
+          <div class="heat-cell heat-67"><strong>66.7%</strong><span>10 / 15</span></div>
+          <div class="heat-cell heat-93"><strong>93.3%</strong><span>14 / 15</span></div>
+          <div class="heat-cell heat-77"><strong>76.9%</strong><span>10 / 13</span></div>
+        </div>
+        <div class="legend"><span>Lower</span><i></i><span>Higher accuracy</span></div>
       </div>
 
-      <div class="reading">
-        <h3>What happened?</h3>
-        <p>The shared LoRA answered one of two Level 1 questions correctly; the other systems missed both. Every system answered the two Level 2 items and the objective Level 3 item correctly. With counts this small, the responsible conclusion is simply that training and inference completed—not that one architecture is better.</p>
+      <div class="finding-grid">
+        <article><span>01</span><h3>The base model was already strong.</h3><p>Frozen Qwen answered every Level 2 objective question correctly. With only 100 training examples, fine-tuning had little room to improve.</p></article>
+        <article><span>02</span><h3>More machinery did not mean a better score.</h3><p>Single LoRA and PolicyMoE produced the same aggregate objective results. On this sample, specialization did not translate into a measurable advantage.</p></article>
+        <article><span>03</span><h3>The experiment is too small for a broad claim.</h3><p>Five held-out documents are enough to test the pipeline, not enough to prove one architecture is generally superior.</p></article>
       </div>
     </section>
 
     <section class="section dark" id="router">
-      <div class="wrap router-grid">
-        <div>
-          <p class="kicker mint">Learned routing</p>
-          <h2>The router chose an expert from the question alone.</h2>
-          <p class="muted">No known level label was used at inference. A trained linear layer scored the frozen base-model representation, applied softmax, and loaded only the highest-scoring adapter.</p>
+      <div class="wrap">
+        <div class="section-head">
+          <div><p class="kicker mint">What the router learned</p><h2>It saw the question—not the level label.</h2></div>
+          <p class="dark-copy">A linear layer read the frozen model’s prompt representation, produced three softmax weights, and sent each question to the highest-scoring expert.</p>
         </div>
-        <div class="router-card">
-          <div class="router-title"><span>Expert selections on 6 test items</span><strong>Top-1</strong></div>
-          <div class="route-row"><span>Memory</span><div class="route-track"><i style="width:16.7%"></i></div><b>1</b></div>
-          <div class="route-row"><span>Understanding</span><div class="route-track"><i style="width:0%"></i></div><b>0</b></div>
-          <div class="route-row"><span>Application</span><div class="route-track"><i style="width:83.3%"></i></div><b>5</b></div>
-          <p class="router-note">The router heavily favored the application adapter. On this tiny split, that included both Level 2 questions and one Level 1 question.</p>
+
+        <div class="routing-figure" role="img" aria-label="Average router probabilities for memory, understanding, and application experts on questions from Levels 1, 2, and 3">
+          <div class="routing-legend">
+            <span><i class="memory-swatch"></i>Memory expert</span>
+            <span><i class="understanding-swatch"></i>Understanding expert</span>
+            <span><i class="application-swatch"></i>Application expert</span>
+          </div>
+          <div class="routing-chart">
+            <div class="y-axis"><span>100%</span><span>75%</span><span>50%</span><span>25%</span><span>0%</span></div>
+            <div class="plot">
+              <div class="grid-lines"><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="stack-wrap">
+                <div class="stack" aria-label="Level 1: 61.3 percent memory, 29.4 percent understanding, 9.2 percent application">
+                  <div class="seg application" style="height:9.2%"><span>9.2</span></div>
+                  <div class="seg understanding" style="height:29.4%"><span>29.4</span></div>
+                  <div class="seg memory" style="height:61.3%"><span>61.3</span></div>
+                </div>
+                <strong>Level 1</strong><small>facts</small>
+              </div>
+              <div class="stack-wrap">
+                <div class="stack" aria-label="Level 2: 39.3 percent memory, 38.5 percent understanding, 22.3 percent application">
+                  <div class="seg application" style="height:22.3%"><span>22.3</span></div>
+                  <div class="seg understanding" style="height:38.5%"><span>38.5</span></div>
+                  <div class="seg memory" style="height:39.3%"><span>39.3</span></div>
+                </div>
+                <strong>Level 2</strong><small>understanding</small>
+              </div>
+              <div class="stack-wrap">
+                <div class="stack" aria-label="Level 3: 24.2 percent memory, 23.0 percent understanding, 52.8 percent application">
+                  <div class="seg application" style="height:52.8%"><span>52.8</span></div>
+                  <div class="seg understanding" style="height:23%"><span>23.0</span></div>
+                  <div class="seg memory" style="height:24.2%"><span>24.2</span></div>
+                </div>
+                <strong>Level 3</strong><small>application</small>
+              </div>
+            </div>
+          </div>
+          <p class="figure-note">Average softmax weights across the 50 held-out questions. The router leaned toward the memory expert for Level 1 and the application expert for Level 3. Level 2 was less cleanly separated.</p>
+        </div>
+
+        <div class="router-loss">
+          <div><p class="kicker mint">Router training</p><h3>Mixture loss moved in the right direction.</h3><p>The router’s negative log-likelihood fell in every epoch: 1.990 → 1.858 → 1.815 → 1.803.</p></div>
+          <svg viewBox="0 0 520 190" role="img" aria-label="Router mixture loss decreased from 1.990 in epoch one to 1.803 in epoch four">
+            <title>Router mixture loss across four epochs</title>
+            <line x1="58" y1="20" x2="58" y2="150" class="axis"/>
+            <line x1="58" y1="150" x2="490" y2="150" class="axis"/>
+            <line x1="58" y1="45" x2="490" y2="45" class="guide"/><line x1="58" y1="97" x2="490" y2="97" class="guide"/>
+            <polyline points="75,37 210,105 345,128 480,134" class="loss-line"/>
+            <g class="loss-points"><circle cx="75" cy="37" r="5"/><circle cx="210" cy="105" r="5"/><circle cx="345" cy="128" r="5"/><circle cx="480" cy="134" r="5"/></g>
+            <g class="chart-labels"><text x="75" y="25">1.990</text><text x="210" y="93">1.858</text><text x="345" y="116">1.815</text><text x="480" y="122">1.803</text><text x="75" y="174">1</text><text x="210" y="174">2</text><text x="345" y="174">3</text><text x="480" y="174">4</text></g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section wrap" id="dataset">
+      <div class="section-head">
+        <div><p class="kicker">The dataset</p><h2>Built from documents, split by documents.</h2></div>
+        <p>All questions from one source stay together. Twenty documents feed training; five entirely different documents make up the test set, preventing the easiest kind of leakage.</p>
+      </div>
+      <div class="stats-grid">
+        <article><strong>100</strong><span>training questions</span><small>40 L1 · 40 L2 · 20 L3</small></article>
+        <article><strong>50</strong><span>held-out questions</span><small>15 L1 · 15 L2 · 20 L3</small></article>
+        <article><strong>43</strong><span>objective test items</span><small>25 multiple-choice · 18 true/false</small></article>
+        <article><strong>7</strong><span>open-ended test items</span><small>five-point reference rubrics</small></article>
+      </div>
+    </section>
+
+    <section class="section sample-section" id="questions">
+      <div class="wrap">
+        <div class="section-head">
+          <div><p class="kicker">Sample questions</p><h2>What the three levels look like.</h2></div>
+          <p>Each item is tied to an exact passage in a source document. These examples come from the held-out set, not the training set.</p>
+        </div>
+
+        <div class="question-list">
+          <article class="question-card">
+            <div class="question-meta"><span>Level 1 · Memorization</span><small>Multiple choice</small></div>
+            <h3>In the May 28, 2024 announcement on voluntary carbon markets, what quantity is one carbon credit intended to represent?</h3>
+            <ol class="choices" type="A"><li>One kilogram of CO₂ equivalent</li><li>Ten tonnes of CO₂ equivalent</li><li>One hundred tonnes of CO₂ equivalent</li><li class="correct">One tonne of CO₂ equivalent reduced or removed beyond what would otherwise occur</li></ol>
+            <p class="answer"><strong>Answer: D.</strong> This checks direct recall of the document’s terminology.</p>
+          </article>
+
+          <article class="question-card">
+            <div class="question-meta"><span>Level 2 · Understanding</span><small>Multiple choice</small></div>
+            <h3>Which interpretation of the 30% investment-credit provision is supported by the March 29, 2024 Section 48C announcement?</h3>
+            <ol class="choices" type="A"><li>Labor compliance replaces project certification.</li><li class="correct">Support for certified investment is linked to prevailing-wage and apprenticeship requirements.</li><li>Certification makes the labor requirements irrelevant.</li><li>Projects may choose either wage compliance or apprenticeship compliance.</li></ol>
+            <p class="answer"><strong>Answer: B.</strong> This asks the reader to understand how two conditions relate, not simply repeat a number.</p>
+          </article>
+
+          <article class="question-card open-question">
+            <div class="question-meta"><span>Level 3 · Application</span><small>Open response</small></div>
+            <h3>An EECBG-eligible town wants equipment rebates with less administration, but it is also considering a traditional grant with in-person implementation support. Identify both application routes, explain the voucher’s purpose, connect the Community Energy Fellow to the correct route, and give the two deadlines.</h3>
+            <div class="reference-answer"><strong>A strong answer should say:</strong> choose between a traditional grant and a voucher; the voucher covers equipment rebates or technical assistance with less administrative burden; Fellow support is associated with traditional grants; the local-government application deadline was April 30, 2024, while the Fellow-support deadline was March 5, 2024.</div>
+          </article>
         </div>
       </div>
     </section>
 
     <section class="section wrap" id="method">
       <div class="section-head">
-        <div><p class="kicker">From documents to answers</p><h2>What we actually built</h2></div>
-        <p>The raw source format and core three-expert idea follow the paper’s official release. The questions and implementation are our own pilot—not a reproduction of the paper’s published results.</p>
+        <div><p class="kicker">How it worked</p><h2>A plain-English version of the pipeline.</h2></div>
+        <p>The design is inspired by PolicyLLM’s three cognitive levels and PolicyMoE architecture. This is a small independent pilot, not a reproduction of the paper’s 21,000-case benchmark.</p>
       </div>
-
       <ol class="steps">
-        <li><span>01</span><div><h3>Analyze policy documents</h3><p>Twenty-five DOE documents from the paper repository’s released policy archive.</p></div></li>
-        <li><span>02</span><div><h3>Author three-level questions</h3><p>Facts, understanding, and applied scenarios; 125 total, grounded in source evidence.</p></div></li>
-        <li><span>03</span><div><h3>Split without document leakage</h3><p>Twenty documents for training and five entire documents held out for testing.</p></div></li>
-        <li><span>04</span><div><h3>Train adapters and router</h3><p>One shared LoRA, three specialist LoRAs, and a learned linear top-1 router.</p></div></li>
-        <li><span>05</span><div><h3>Compare consistently</h3><p>Frozen Qwen, shared LoRA, and PolicyMoE will use the same 25 held-out questions.</p></div></li>
+        <li><span>01</span><div><h3>Read the policies</h3><p>Start with raw public policy documents and keep the exact supporting passage for every question.</p></div></li>
+        <li><span>02</span><div><h3>Write three kinds of questions</h3><p>Facts, interpretation, and real-world application—matching the paper’s cognitive levels.</p></div></li>
+        <li><span>03</span><div><h3>Hold out whole documents</h3><p>A model never sees training questions from the same source as a test question.</p></div></li>
+        <li><span>04</span><div><h3>Train four adapters</h3><p>One general LoRA and three specialists: memory, understanding, and application.</p></div></li>
+        <li><span>05</span><div><h3>Learn the routing</h3><p>A linear router chooses one specialist from the question alone, then every system answers the same test.</p></div></li>
       </ol>
     </section>
 
     <section class="section wrap two-col">
       <div class="spec-card">
-        <p class="kicker">Planned v2 training configuration</p>
+        <p class="kicker">Training configuration</p>
         <table>
           <tbody>
-            <tr><th>Base</th><td>Qwen/Qwen2.5-7B-Instruct</td></tr>
+            <tr><th>Base model</th><td>Qwen2.5-7B-Instruct</td></tr>
+            <tr><th>Precision</th><td>4-bit NF4 QLoRA · bfloat16 compute</td></tr>
             <tr><th>LoRA</th><td>rank 16 · alpha 32 · dropout 0.05</td></tr>
             <tr><th>Adapters</th><td>3 epochs · learning rate 5e-5</td></tr>
-            <tr><th>Router</th><td>4 epochs · learning rate 5e-5</td></tr>
-            <tr><th>Inference</th><td>greedy · top-1 expert · 384 max tokens</td></tr>
-            <tr><th>Checkpoint</th><td>Qwen revision a09a354</td></tr>
+            <tr><th>Router</th><td>linear · 4 epochs · learning rate 5e-5</td></tr>
+            <tr><th>Inference</th><td>greedy decoding · top-1 expert</td></tr>
+            <tr><th>GPU</th><td>NVIDIA A10 · 23 GB</td></tr>
           </tbody>
         </table>
       </div>
       <div class="limitations">
-        <p class="kicker">Known limitations</p>
-        <h2>What this does not prove</h2>
+        <p class="kicker">Read this before quoting the numbers</p>
+        <h2>This is a pilot, not a leaderboard.</h2>
         <ul>
-          <li>No statistical significance or architecture superiority.</li>
-          <li>No replication of the paper’s full benchmark or published results.</li>
-          <li>The 125-question dataset has not yet completed GPU training.</li>
-          <li>No two-judge score for the open Level 3 response yet.</li>
-          <li>Questions were authored and editorially reviewed, not generated in a logged live model run.</li>
-          <li>Distractor traces are reconstructed fixtures, not original generation logs.</li>
+          <li>Only five documents were held out for testing.</li>
+          <li>The differences are not statistically significant.</li>
+          <li>Seven open-ended answers still need two independent judges.</li>
+          <li>The questions were authored and editorially reviewed; they are not the paper’s benchmark questions.</li>
+          <li>The run tests whether the pipeline works. It does not establish that PolicyMoE is better.</li>
         </ul>
       </div>
     </section>
 
-    <section class="section wrap sources">
-      <p class="kicker">Reproducibility</p>
-      <h2>Inspect the run</h2>
+    <section class="section wrap sources" id="files">
+      <p class="kicker">Open artifacts</p>
+      <h2>Check the work yourself.</h2>
       <div class="source-links">
-        <a href="pilot-125.dataset.json"><span>125-question dataset</span><small>JSON</small></a>
-        <a href="pilot-125.manifest.json"><span>Dataset manifest</span><small>JSON</small></a>
-        <a href="pilot-125.test-level-3.json"><span>Held-out Level 3 set</span><small>JSON</small></a>
-        <a href="comparison.md"><span>Summary report</span><small>Markdown</small></a>
+        <a href="pilot-150.dataset.json"><span>150-question dataset</span><small>JSON</small></a>
+        <a href="pilot-150.manifest.json"><span>Dataset manifest</span><small>JSON</small></a>
+        <a href="pilot-150.test-level-3.json"><span>Held-out Level 3 set</span><small>JSON</small></a>
+        <a href="comparison.md"><span>Result summary</span><small>Markdown</small></a>
         <a href="baseline.predictions.json"><span>Frozen predictions</span><small>JSON</small></a>
         <a href="single_lora.predictions.json"><span>Single LoRA predictions</span><small>JSON</small></a>
         <a href="policymoe.predictions.json"><span>PolicyMoE predictions</span><small>JSON</small></a>
-        <a href="https://github.com/wad3birch/PolicyLLM"><span>Paper repository</span><small>External ↗</small></a>
+        <a href="router-training.json"><span>Router training history</span><small>JSON</small></a>
         <a href="https://arxiv.org/abs/2604.12995"><span>PolicyLLM paper</span><small>arXiv ↗</small></a>
       </div>
     </section>
@@ -197,8 +265,8 @@
 
   <footer>
     <div class="wrap footer-inner">
-      <p><strong>PolicyMoE execution test</strong><br><span>Transparent results over inflated claims.</span></p>
-      <p>Built from public DOE policy documents.<br>Completed October 16, 2026.</p>
+      <p><strong>PolicyMoE pilot</strong><br><span>A working experiment with honest limits.</span></p>
+      <p>Built from public U.S. Department of Energy documents.<br>Completed October 16, 2026.</p>
     </div>
   </footer>
 </body>

@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "dataset_sha256": "74df87e339f3017a8229f5dd07570b641de0d034c1c000aabe743654488f05ef",
+    "dataset_sha256": "40f6224d09abfc3b690678c9594c97c50a17eac4ff2f11147f3473b17aaa7c09",
     "system": "baseline",
     "model": "Qwen/Qwen2.5-7B-Instruct",
     "resolved_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
@@ -8,44 +8,308 @@
     "decoding": "greedy",
     "max_new_tokens": 384,
     "checkpoint_config_sha256": null,
-    "dataset_kind": "authored_editorially_reviewed_fixture",
-    "test_question_count": 6,
-    "test_document_count": 1
+    "dataset_kind": "agent_authored_editorially_reviewed_fixture",
+    "test_question_count": 50,
+    "test_document_count": 5
   },
   "predictions": [
     {
-      "uid": "doe-assets-l1",
+      "uid": "pilot125-vcm-l1-mc",
+      "prediction": "D",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-vcm-l1-tf",
+      "prediction": "True",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-vcm-l1-mc-date",
+      "prediction": "D",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-48c-l1-mc",
       "prediction": "A",
       "selected_expert": null,
       "router_probabilities": null
     },
     {
-      "uid": "doe-assets-l1-tf",
+      "uid": "pilot125-48c-l1-tf",
       "prediction": "False",
       "selected_expert": null,
       "router_probabilities": null
     },
     {
-      "uid": "doe-assets-l2",
+      "uid": "pilot150-48c-l1-mc-origin",
+      "prediction": "C",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-assets-l1-mc",
       "prediction": "A",
       "selected_expert": null,
       "router_probabilities": null
     },
     {
-      "uid": "doe-assets-l2-tf",
+      "uid": "pilot125-assets-l1-tf",
+      "prediction": "True",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-assets-l1-mc-eir-name",
+      "prediction": "D",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-industry-l1-mc",
+      "prediction": "A",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-industry-l1-tf",
       "prediction": "False",
       "selected_expert": null,
       "router_probabilities": null
     },
     {
-      "uid": "doe-assets-l3",
-      "prediction": "Based on the \"Federal Support Opportunities to Remediate and Redevelop Energy Assets: Wide-Ranging Initiatives to Drive Investment Opportunities in Energy Communities\" document, a community looking to convert a retired, potentially contaminated coal plant into a clean-energy project should investigate several federal support options:\n\n1. **Redevelopment Capital**: The community can explore the **Energy Efficiency and Conservation Block Grant (EECBG) program** under the American Recovery and Reinvestment Act of 2009, which provides funding for energy efficiency and conservation projects. Additionally, the **Department of Energy’s (DOE) Loan Programs Office (LPO)** offers loans and loan guarantees for large-scale renewable energy and energy efficiency projects.\n\n2. **Contamination Assessment and Cleanup**: For contamination issues, the **Superfund program** administered by the Environmental Protection Agency (EPA) can provide financial assistance for the investigation and cleanup of hazardous waste sites. The **Brownfields Program**, also managed by the EPA, offers grants, loans, and other resources to support the environmental cleanup and redevelopment of properties.\n\n3. **Clean-Energy Investment**: The **Investment Tax Credit (ITC)** and **Production Tax Credit (PTC)** are available for renewable energy projects. The **Renewable Energy and Energy Efficiency Tax Incentives** provide tax credits for various clean energy technologies. The **Department of Energy’s (DOE) Office of Energy Efficiency and Renewable Energy (EERE)** also offers funding through programs like the **SunShot Initiative** for solar energy projects and the **Wind Energy Technologies Office** for wind projects.\n\nThe two referenced mapping tools mentioned in the document can help establish:\n\n- **Mapping Tools for Energy Communities**: These tools can identify potential sites for redevelopment, assess local energy resources, and map out existing infrastructure. They can assist in understanding the feasibility of converting the coal plant to a clean-energy project by highlighting nearby transmission lines, renewable",
+      "uid": "pilot150-industry-l1-mc-administrator",
+      "prediction": "C",
       "selected_expert": null,
       "router_probabilities": null
     },
     {
-      "uid": "doe-assets-l3-mc",
+      "uid": "pilot125-eecbg-l1-mc",
+      "prediction": "D",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-eecbg-l1-tf",
+      "prediction": "False",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-eecbg-l1-mc-fourth-tranche",
+      "prediction": "B",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-vcm-l2-mc",
+      "prediction": "B",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-vcm-l2-tf",
+      "prediction": "False",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-vcm-l2-tf-revenue",
+      "prediction": "True",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-48c-l2-mc",
       "prediction": "A",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-48c-l2-tf",
+      "prediction": "True",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-48c-l2-mc-labor-conditions",
+      "prediction": "B",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-assets-l2-mc",
+      "prediction": "C",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-assets-l2-tf",
+      "prediction": "False",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-assets-l2-tf-unknown-contamination",
+      "prediction": "False",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-industry-l2-mc",
+      "prediction": "A",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-industry-l2-tf",
+      "prediction": "True",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-industry-l2-mc-technical-assistance",
+      "prediction": "B",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-eecbg-l2-mc",
+      "prediction": "D",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-eecbg-l2-tf",
+      "prediction": "False",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-eecbg-l2-tf-community-savings",
+      "prediction": "True",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-vcm-l3-mc",
+      "prediction": "D",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-vcm-l3-mc-protocol-input",
+      "prediction": "A",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-vcm-l3-open-agency-roles",
+      "prediction": "Based on the May 28, 2024, joint policy statement and principles on voluntary carbon markets released by the Biden-Harris Administration, the workstreams can be assigned to the following agencies:\n\n1. **Direct Carbon-Removal Purchases**: This workstream would likely be handled by the **Environmental Protection Agency (EPA)** or the **Department of Energy (DOE)**, given their roles in regulating emissions and promoting clean energy technologies.\n\n2. **Market Infrastructure and Support**: This workstream would be primarily managed by the **Bureau of Economic Analysis (BEA)** within the Department of Commerce, along with the **Securities and Exchange Commission (SEC)**, which oversees financial markets and reporting requirements.\n\n3. **International Climate-Agreement Negotiations**: This workstream would be led by the **State Department** and the **National Security Council**, as they are responsible for international diplomacy and climate negotiations.\n\n4. **International Crediting Initiatives Such as LEAF and the Energy Transition Accelerator**: This workstream would involve the **State Department** and potentially the **USAID**, as they handle international development and climate initiatives.\n\n5. **Principles for Private-Sector Net-Zero Transition Planning**: This workstream would be overseen by the **Council on Environmental Quality (CEQ)**, which advises the White House on environmental policies, and the **White House Office of Management and Budget (OMB)**, which sets budgetary and regulatory priorities.",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-vcm-l3-tf-credit-quantity",
+      "prediction": "False",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-48c-l3-open",
+      "prediction": "Under the announced $4 billion in tax credits for clean energy supply chain projects, if a selected project proposes waiting three years to submit its certification information and then an additional three years after certification to enter service, it faces significant timing issues:\n\n1. **Certification Delay**: Submitting certification information three years into the project delays the project's ability to secure the tax credit benefits. The project should aim to submit certification information as soon as possible to ensure timely access to the tax credits.\n\n2. **Entry into Service Delay**: Entering service three years after certification further extends the time before the project can benefit from the tax credits. Projects should plan to enter service as soon as possible after certification to maximize the financial benefits of the tax credits.\n\n**Two-Stage Timeline Plan:**\n- **Stage 1**: Submit certification information immediately upon completion of the required documentation and verification processes.\n- **Stage 2**: Aim to enter service as soon as possible after certification is granted, ideally within one or two years post-certification, to fully leverage the tax credit benefits.",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-48c-l3-mc-category-sum",
+      "prediction": "A",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-48c-l3-open-disclosure",
+      "prediction": "For the projects under the Biden-Harris Administration's $4 billion in tax credits for clean energy supply chains:\n\n1. **Pre-Certification Disclosure**: The officer should not disclose any information about the first project (which has an allocation but is not certified and has not consented to identification) to avoid premature disclosure. This aligns with the principle of maintaining confidentiality until certification.\n\n2. **Post-Certification Publication**: Once the first project is certified, the officer should ensure that all recipients, including the first one, are required to publish a public announcement about their allocation. This is a standard requirement to inform the public about the recipients and the use of funds.\n\n3. **Voluntary Recipient Publicity**: The second project, which has already been certified, can be publicly identified and announced. The officer should prepare a template or guidance for both projects to ensure consistent and accurate public communication.\n\n4. **Effects on Allocation**: Requiring the first recipient to make its own public announcement as a condition of keeping its allocation is acceptable. This ensures transparency and accountability while respecting the confidentiality of non-certified projects. The officer should draft a clear condition stating that failure to comply with this requirement could result in the loss of the allocation.\n\nIn summary, the officer should maintain confidentiality for non-certified projects, ensure all certified projects are publicly identified and announce their allocations, and condition the allocation on the first recipient’s compliance with the public announcement requirement.",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-48c-l3-tf-publicity",
+      "prediction": "True",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-assets-l3-mc",
+      "prediction": "B",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-assets-l3-mc-operating-site",
+      "prediction": "B",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-assets-l3-open-funding-plan",
+      "prediction": "The Federal Support Opportunities to Remediate and Redevelop Energy Assets initiative does not offer $250 billion in cleanup grants as stated in the community's draft redevelopment plan. Instead, the Department of Energy (DOE) provides various forms of support, including grants, loans, and loan guarantees for environmental cleanup and redevelopment projects.\n\nFor capital, uncertain contamination, and clean-energy development, communities should investigate the following:\n\n1. **Brownfields Program**: The Brownfields program, administered by the Environmental Protection Agency (EPA), provides grants, loans, and other financial assistance for the assessment, cleanup, and reuse of contaminated properties. While \"EIR\" is not interchangeable with \"Brownfields,\" both programs can be complementary depending on the specific needs of the community.\n\n2. **Superfund Program**: For sites with uncertain contamination, the Superfund program, also managed by the EPA, provides funding for cleanup activities at sites listed on the National Priorities List (NPL).\n\n3. **Energy Efficiency and Renewable Energy (EERE) Programs**: The DOE’s Office of Energy Efficiency and Renewable Energy (EERE) offers various programs and funding opportunities for clean-energy projects, including grants, loans, and technical assistance.\n\n4. **Tax Incentives**: The Energy Community Tax Credit Bonus likely refers to the Investment Tax Credit (ITC) or Production Tax Credit (PTC), which provide tax incentives for renewable energy projects. However, these are not automatic and require specific eligibility criteria.\n\n**Eligibility Limitations**: The DOE’s energy-assets announcement typically has specific eligibility criteria for each type of support. For example, the Brownfields program requires that the property be listed on the NPL or be eligible for listing. The ITC and PTC have specific conditions related to the type of technology used and the size of the project. Communities should review the specific guidelines provided by the DOE for the most accurate and up-to-date",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-assets-l3-tf-loan-scale",
+      "prediction": "True",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-industry-l3-open",
+      "prediction": "According to the February 13, 2023 announcement by the Biden-Harris Administration, the Low-Income Communities Bonus Credit applies additional incentives to projects that direct financial benefits to low-income households. The bonus credit increases based on the percentage of benefits directed to low-income households.\n\n- **Project A**: This project directs 40% of its electricity's financial benefits to low-income households. Therefore, it qualifies for the 40%-to-49% category, which results in a 10% bonus credit increase.\n  \n- **Project B**: This project directs 55% of its electricity's financial benefits to low-income households. Therefore, it qualifies for the 50%-or-greater category, which results in a 15% bonus credit increase.\n\nThe key distinction that matters is the percentage of financial benefits directed to low-income households, as this determines the applicable bonus credit category and the corresponding increase.",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-industry-l3-mc-capacity-sum",
+      "prediction": "B",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-industry-l3-open-manufacturer-plan",
+      "prediction": "The relevant program for a small manufacturer in an energy community would be the \"Energy Communities Program\" announced by the Biden-Harris Administration on February 13, 2023. This program aims to support America's energy and industrial communities with historic investments.\n\nHere are the corrections to the assumptions:\n\n1. **Priority**: The program does not prioritize minority-owned businesses exclusively. However, it may offer additional benefits or resources to minority-owned businesses, so it's advisable to check if there are any specific provisions for such entities.\n\n2. **Required Materials**: For a full application, the following materials are typically required:\n   - Concept Paper (if not submitted earlier)\n   - Full Application Package\n\n3. **Submission Deadlines**:\n   - **Concept Paper Deadline**: If you have not already submitted a concept paper, you should do so before the deadline for concept papers. The exact date was not specified in the announcement, but it is generally within a few weeks of the full application deadline.\n   - **Full Application Deadline**: The full application should be submitted by the final deadline, which was likely set for April 15, 2023, based on typical timelines for such programs.\n\nGiven that the full application was sent on June 8, 2023, this is past the typical submission deadlines for such programs. Therefore, the small manufacturer should review the specific timeline provided in the announcement and ensure all required materials, including a concept paper if applicable, were submitted by the respective deadlines.",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-industry-l3-tf-deadlines",
+      "prediction": "True",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-eecbg-l3-mc",
+      "prediction": "A",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-eecbg-l3-mc-solar-capacity",
+      "prediction": "B",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-eecbg-l3-open-town-route",
+      "prediction": "As of February 28, 2024, the Biden-Harris Administration announced two application routes for towns to receive funding under the Energy Efficiency and Conservation Block Grant (EECBG) program:\n\n1. **Voucher Route**: This route offers equipment rebates with less grant administration. The stated function of this route is to simplify the application process and reduce administrative burden on local governments.\n\n2. **Traditional Grant Route**: This route involves a Community Energy Fellow who provides in-person implementation support to local governments.\n\nThe separate deadlines are:\n- **Local Government Application Deadline**: Not specified in the announcement but typically would be earlier than the Fellow-support deadline.\n- **Community Energy Fellow Support Deadline**: Also not specified in the announcement but would likely be later than the local government application deadline.\n\nFor precise dates, you would need to refer to the official announcement or the specific guidelines provided by the Biden-Harris Administration at the time of the announcement.",
+      "selected_expert": null,
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-eecbg-l3-tf-fellow-deadline",
+      "prediction": "False",
       "selected_expert": null,
       "router_probabilities": null
     }

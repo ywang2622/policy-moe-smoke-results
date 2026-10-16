@@ -1,0 +1,407 @@
+{
+  "dataset": "doe_pilot_150_v3",
+  "upstream_repository": "https://github.com/wad3birch/PolicyLLM",
+  "upstream_commit": "a9900805b92487b75c8bdacac720a92090312469",
+  "archive_sha256": "d2d8b3f6d2a432a9b8580c16f7f6357d06ce516744bfeaaf0f3fcf37633f0c68",
+  "random_seed": 260412995,
+  "split_unit": "source_document_with_policy_family_audit",
+  "split_revision": "v3_groups_section_48c_and_expands_held_out_items",
+  "document_counts": {
+    "train": 20,
+    "test": 5
+  },
+  "question_counts": {
+    "all": {
+      "level_1": 55,
+      "level_2": 55,
+      "level_3": 40
+    },
+    "train": {
+      "level_1": 40,
+      "level_2": 40,
+      "level_3": 20
+    },
+    "test": {
+      "level_1": 15,
+      "level_2": 15,
+      "level_3": 20
+    }
+  },
+  "documents": [
+    {
+      "source_document_id": "01e3712c83f97047",
+      "source_file": "raw/01e3712c83f97047.txt",
+      "policy_name": "Joint Statement by the U.S. and EU following the 11th U.S.-EU Energy Council",
+      "sha256": "01e3712c83f97047cadc11fa83e1e0ddc526f6ae96d2db9ced66c098aad3de9b",
+      "split": "train",
+      "item_uids": [
+        "doe-01e3712c-l1-mc",
+        "doe-01e3712c-l1-tf",
+        "doe-01e3712c-l2-mc",
+        "doe-01e3712c-l2-tf",
+        "doe-01e3712c-l3-qa"
+      ]
+    },
+    {
+      "source_document_id": "0d30077ac7989ac6",
+      "source_file": "raw/0d30077ac7989ac6.txt",
+      "policy_name": "The United States and Israel Establish Joint Center of Excellence in Energy",
+      "sha256": "0d30077ac7989ac6db7dc5f413c659a3aeb957f6d8fa160e1d6b64589b8af59c",
+      "split": "train",
+      "item_uids": [
+        "doe-0d30077a-l1-mc",
+        "doe-0d30077a-l1-tf",
+        "doe-0d30077a-l2-mc",
+        "doe-0d30077a-l2-tf",
+        "doe-0d30077a-l3-mc"
+      ]
+    },
+    {
+      "source_document_id": "159e311ece9c5d43",
+      "source_file": "raw/159e311ece9c5d43.txt",
+      "policy_name": "Biden-Harris Administration Releases Joint Policy Statement and Principles on Voluntary Carbon Markets",
+      "sha256": "159e311ece9c5d430977a863e8d834be84165b4ba1be213394b8ab691a3d66f7",
+      "split": "test",
+      "item_uids": [
+        "pilot125-vcm-l1-mc",
+        "pilot125-vcm-l1-tf",
+        "pilot125-vcm-l2-mc",
+        "pilot125-vcm-l2-tf",
+        "pilot125-vcm-l3-mc",
+        "pilot150-vcm-l1-mc-date",
+        "pilot150-vcm-l2-tf-revenue",
+        "pilot150-vcm-l3-mc-protocol-input",
+        "pilot150-vcm-l3-open-agency-roles",
+        "pilot150-vcm-l3-tf-credit-quantity"
+      ]
+    },
+    {
+      "source_document_id": "17f1a45b386a336b",
+      "source_file": "raw/17f1a45b386a336b.txt",
+      "policy_name": "DOE Finalizes Four Consensus-based Efficiency Standards to Save Americans Billions on Utility Bills",
+      "sha256": "17f1a45b386a336b5f5fe2c0688b9be4edb8b254adadd23ba73147e6ee6bed80",
+      "split": "train",
+      "item_uids": [
+        "doe-17f1a45b-l1-mc",
+        "doe-17f1a45b-l1-tf",
+        "doe-17f1a45b-l2-mc",
+        "doe-17f1a45b-l2-tf",
+        "doe-17f1a45b-l3-qa"
+      ]
+    },
+    {
+      "source_document_id": "17f563d4ee0c1748",
+      "source_file": "raw/17f563d4ee0c1748.txt",
+      "policy_name": "Biden-Harris Administration Announces New Mexico's Launch of Federal Home Energy Rebates Program Helping Lower Families' Utility Bills",
+      "sha256": "17f563d4ee0c174800d82f27f751edff343bf36a52084d63d0a21d9753e6773e",
+      "split": "train",
+      "item_uids": [
+        "doe-17f563d4-l1-mc",
+        "doe-17f563d4-l1-tf",
+        "doe-17f563d4-l2-mc",
+        "doe-17f563d4-l2-tf",
+        "doe-17f563d4-l3-mc"
+      ]
+    },
+    {
+      "source_document_id": "42fc70564a5fd95c",
+      "source_file": "raw/42fc70564a5fd95c.txt",
+      "policy_name": "DOE, USDA Launch Initiative to Help Farmers Reduce Costs with Underutilized Renewable Technologies as part of President Biden’s Investing in America Agenda",
+      "sha256": "42fc70564a5fd95cebabc0188e79c6da8c2eabfaf30b578774dfa4fe7e9e8d11",
+      "split": "train",
+      "item_uids": [
+        "doe-42fc7056-l1-mc",
+        "doe-42fc7056-l1-tf",
+        "doe-42fc7056-l2-mc",
+        "doe-42fc7056-l2-tf",
+        "doe-42fc7056-l3-qa"
+      ]
+    },
+    {
+      "source_document_id": "4f1c4c317ec8d48f",
+      "source_file": "raw/4f1c4c317ec8d48f.txt",
+      "policy_name": "U.S. Energy Secretary and Mexico Energy Minister Sign Bilateral Principles to Promote Electricity Reliability of Interconnected Power Systems",
+      "sha256": "4f1c4c317ec8d48faace63453d1829918341bee67f7ccd8f5bbab3746997e35c",
+      "split": "train",
+      "item_uids": [
+        "doe-4f1c4c31-l1-mc",
+        "doe-4f1c4c31-l1-tf",
+        "doe-4f1c4c31-l2-mc",
+        "doe-4f1c4c31-l2-tf",
+        "doe-4f1c4c31-l3-mc"
+      ]
+    },
+    {
+      "source_document_id": "51610c5fed7e76c2",
+      "source_file": "raw/51610c5fed7e76c2.txt",
+      "policy_name": "Biden-Harris Administration Releases First-Ever National Strategy to Accelerate Deployment of Zero-Emission Infrastructure for Freight Trucks",
+      "sha256": "51610c5fed7e76c282c96f0ddc41d9e800f60445465b22244302108b53a0262d",
+      "split": "train",
+      "item_uids": [
+        "doe-51610c5f-l1-mc",
+        "doe-51610c5f-l1-tf",
+        "doe-51610c5f-l2-mc",
+        "doe-51610c5f-l2-tf",
+        "doe-51610c5f-l3-qa"
+      ]
+    },
+    {
+      "source_document_id": "525a1210e848181e",
+      "source_file": "raw/525a1210e848181e.txt",
+      "policy_name": "Biden-Harris Administration Announces Nearly $2 Billion to Support American Auto Workers, Convert Facilities for Electric Vehicles",
+      "sha256": "525a1210e848181e83cdceabab88bd865b1572aaa7907a130671b93de72bb582",
+      "split": "train",
+      "item_uids": [
+        "doe-525a1210-l1-mc",
+        "doe-525a1210-l1-tf",
+        "doe-525a1210-l2-mc",
+        "doe-525a1210-l2-tf",
+        "doe-525a1210-l3-mc"
+      ]
+    },
+    {
+      "source_document_id": "5631e7e916c1edfa",
+      "source_file": "raw/5631e7e916c1edfa.txt",
+      "policy_name": "Biden-Harris Administration Announces $4 Billion in Tax Credits to Build Clean Energy Supply Chain, Drive Investments, and Lower Costs in Energy Communities",
+      "sha256": "5631e7e916c1edfa1dec96cd157425fdc4bc1c18f303eff50cdf8c419d4c68ac",
+      "split": "test",
+      "item_uids": [
+        "pilot125-48c-l1-mc",
+        "pilot125-48c-l1-tf",
+        "pilot125-48c-l2-mc",
+        "pilot125-48c-l2-tf",
+        "pilot125-48c-l3-open",
+        "pilot150-48c-l1-mc-origin",
+        "pilot150-48c-l2-mc-labor-conditions",
+        "pilot150-48c-l3-mc-category-sum",
+        "pilot150-48c-l3-open-disclosure",
+        "pilot150-48c-l3-tf-publicity"
+      ]
+    },
+    {
+      "source_document_id": "5fc0626cc73b534d",
+      "source_file": "raw/5fc0626cc73b534d.txt",
+      "policy_name": "Biden-Harris Administration Enacts Law Banning Importation of Russian Uranium",
+      "sha256": "5fc0626cc73b534dfa6cc1a799d9c23e7bf7d967b1bdd8e04b09f4b09ff638bf",
+      "split": "train",
+      "item_uids": [
+        "doe-5fc0626c-l1-mc",
+        "doe-5fc0626c-l1-tf",
+        "doe-5fc0626c-l2-mc",
+        "doe-5fc0626c-l2-tf",
+        "doe-5fc0626c-l3-qa"
+      ]
+    },
+    {
+      "source_document_id": "6c5d3b2d64a988ee",
+      "source_file": "raw/6c5d3b2d64a988ee.txt",
+      "policy_name": "DOE Releases New Report Outlining Solutions to Meet Growing Electricity Demand",
+      "sha256": "6c5d3b2d64a988ee2c60a0678de3948b02e3ca49cafec936179ed1ac82388366",
+      "split": "train",
+      "item_uids": [
+        "doe-6c5d3b2d-l1-mc",
+        "doe-6c5d3b2d-l1-tf",
+        "doe-6c5d3b2d-l2-mc",
+        "doe-6c5d3b2d-l2-tf",
+        "doe-6c5d3b2d-l3-mc"
+      ]
+    },
+    {
+      "source_document_id": "833cf89be816da84",
+      "source_file": "raw/833cf89be816da84.txt",
+      "policy_name": "DOE Releases First Ever Federal Blueprint to Decarbonize America’s Buildings Sector",
+      "sha256": "833cf89be816da84dd8bab04a5a0b08297fe2d9fd3049e7cc902f3fc160715f6",
+      "split": "train",
+      "item_uids": [
+        "doe-833cf89b-l1-mc",
+        "doe-833cf89b-l1-tf",
+        "doe-833cf89b-l2-mc",
+        "doe-833cf89b-l2-tf",
+        "doe-833cf89b-l3-qa"
+      ]
+    },
+    {
+      "source_document_id": "97dbf0c94547effe",
+      "source_file": "raw/97dbf0c94547effe.txt",
+      "policy_name": "Biden-Harris Administration Announces Four Contracts to Boost Domestic HALEU Supply and Reinforce America’s Nuclear Energy Leadership as Part of Investing in America Agenda",
+      "sha256": "97dbf0c94547effee42be14fde31281193c0dc8bd3152e5dc37f32f0b38c9f4a",
+      "split": "train",
+      "item_uids": [
+        "doe-97dbf0-l1-mc",
+        "doe-97dbf0-l1-tf",
+        "doe-97dbf0-l2-mc",
+        "doe-97dbf0-l2-tf",
+        "doe-97dbf0-l3-mc"
+      ]
+    },
+    {
+      "source_document_id": "9a62011afce075ff",
+      "source_file": "raw/9a62011afce075ff.txt",
+      "policy_name": "U.S. Department of Energy Statement on East Coast and Gulf Coast Ports",
+      "sha256": "9a62011afce075ff516c2295daa4d01b0f66909c1056a39199b1bf7cc036b0d4",
+      "split": "train",
+      "item_uids": [
+        "doe-9a62011a-l1-mc",
+        "doe-9a62011a-l1-tf",
+        "doe-9a62011a-l2-mc",
+        "doe-9a62011a-l2-tf",
+        "doe-9a62011a-l3-qa"
+      ]
+    },
+    {
+      "source_document_id": "9ad8c45778e2f782",
+      "source_file": "raw/9ad8c45778e2f782.txt",
+      "policy_name": "DOE Releases Final Interpretive Guidance on the Definition of Foreign Entity of Concern",
+      "sha256": "9ad8c45778e2f7826c6215a3e48323f33418445e8d865e7de247055fd16ae340",
+      "split": "train",
+      "item_uids": [
+        "doe-9ad8c457-l1-mc",
+        "doe-9ad8c457-l1-tf",
+        "doe-9ad8c457-l2-mc",
+        "doe-9ad8c457-l2-tf",
+        "doe-9ad8c457-l3-mc"
+      ]
+    },
+    {
+      "source_document_id": "c7625bdcccf31a4c",
+      "source_file": "raw/c7625bdcccf31a4c.txt",
+      "policy_name": "Federal Support Opportunities to Remediate and Redevelop Energy Assets: Wide-Ranging Initiatives to Drive Investment Opportunities in Energy Communities",
+      "sha256": "c7625bdcccf31a4c016af402b57198cf002096d572333f890a20ddd0d320a266",
+      "split": "test",
+      "item_uids": [
+        "pilot125-assets-l1-mc",
+        "pilot125-assets-l1-tf",
+        "pilot125-assets-l2-mc",
+        "pilot125-assets-l2-tf",
+        "pilot125-assets-l3-mc",
+        "pilot150-assets-l1-mc-eir-name",
+        "pilot150-assets-l2-tf-unknown-contamination",
+        "pilot150-assets-l3-mc-operating-site",
+        "pilot150-assets-l3-open-funding-plan",
+        "pilot150-assets-l3-tf-loan-scale"
+      ]
+    },
+    {
+      "source_document_id": "cde47f21de540026",
+      "source_file": "raw/cde47f21de540026.txt",
+      "policy_name": "DOE Announces Pilot Project to Calculate the Emissions Intensity of Certain Industrial Products",
+      "sha256": "cde47f21de54002652e56c11793a5d85a56a1a7380d7bdd8ac7ccce427c571e2",
+      "split": "train",
+      "item_uids": [
+        "doe-cde47f21-l1-mc",
+        "doe-cde47f21-l1-tf",
+        "doe-cde47f21-l2-mc",
+        "doe-cde47f21-l2-tf",
+        "doe-cde47f21-l3-qa"
+      ]
+    },
+    {
+      "source_document_id": "d2ba86e1c4aab001",
+      "source_file": "raw/d2ba86e1c4aab001.txt",
+      "policy_name": "Joint Statement between DOE and the Japan Ministry of Education, Sports, Science and Technology Concerning a Strategic Partnership to Accelerate Fusion Energy Demonstration and Commercialization",
+      "sha256": "d2ba86e1c4aab00149d3678213f4cd56f31d3d7c029710cc8c1209362f6f5b71",
+      "split": "train",
+      "item_uids": [
+        "doe-d2ba86e1-l1-mc",
+        "doe-d2ba86e1-l1-tf",
+        "doe-d2ba86e1-l2-mc",
+        "doe-d2ba86e1-l2-tf",
+        "doe-d2ba86e1-l3-mc"
+      ]
+    },
+    {
+      "source_document_id": "d4ca4f83eb678dfd",
+      "source_file": "raw/d4ca4f83eb678dfd.txt",
+      "policy_name": "Biden-Harris Administration Opens Largest Ever Funding Opportunity to Commercialize Innovative Wave Energy Technologies",
+      "sha256": "d4ca4f83eb678dfdb97e82a77bd1288a01951e34a85f65c0c41d2185b01fb411",
+      "split": "train",
+      "item_uids": [
+        "doe-d4ca4f83-l1-mc",
+        "doe-d4ca4f83-l1-tf",
+        "doe-d4ca4f83-l2-mc",
+        "doe-d4ca4f83-l2-tf",
+        "doe-d4ca4f83-l3-qa"
+      ]
+    },
+    {
+      "source_document_id": "d7ccc19b5ed0f2d4",
+      "source_file": "raw/d7ccc19b5ed0f2d4.txt",
+      "policy_name": "Biden-Harris Administration Announces Historic Investments to Support America’s Energy and Industrial Communities",
+      "sha256": "d7ccc19b5ed0f2d4e77e77acc13ea28c0492bb70e5a6d83ecf944d7754aa7a3c",
+      "split": "test",
+      "item_uids": [
+        "pilot125-industry-l1-mc",
+        "pilot125-industry-l1-tf",
+        "pilot125-industry-l2-mc",
+        "pilot125-industry-l2-tf",
+        "pilot125-industry-l3-open",
+        "pilot150-industry-l1-mc-administrator",
+        "pilot150-industry-l2-mc-technical-assistance",
+        "pilot150-industry-l3-mc-capacity-sum",
+        "pilot150-industry-l3-open-manufacturer-plan",
+        "pilot150-industry-l3-tf-deadlines"
+      ]
+    },
+    {
+      "source_document_id": "d8547c98771927de",
+      "source_file": "raw/d8547c98771927de.txt",
+      "policy_name": "Biden- Harris Administration Supports Local Projects to Save Energy and Tackle the Climate Crisis as part of Investing in America Agenda",
+      "sha256": "d8547c98771927de6f290e4206a3bc0db8ac9a9ebca5c18937fbb194da6a8c6e",
+      "split": "test",
+      "item_uids": [
+        "pilot125-eecbg-l1-mc",
+        "pilot125-eecbg-l1-tf",
+        "pilot125-eecbg-l2-mc",
+        "pilot125-eecbg-l2-tf",
+        "pilot125-eecbg-l3-mc",
+        "pilot150-eecbg-l1-mc-fourth-tranche",
+        "pilot150-eecbg-l2-tf-community-savings",
+        "pilot150-eecbg-l3-mc-solar-capacity",
+        "pilot150-eecbg-l3-open-town-route",
+        "pilot150-eecbg-l3-tf-fellow-deadline"
+      ]
+    },
+    {
+      "source_document_id": "ec25440e8378d512",
+      "source_file": "raw/ec25440e8378d512.txt",
+      "policy_name": "U.S. Department of Energy Announces Final Rule to Propel Federal Buildings Toward Zero Emissions",
+      "sha256": "ec25440e8378d5120af3cf84ed48f30dcaa13e27e1e63582dc5ec6efc82d3ab6",
+      "split": "train",
+      "item_uids": [
+        "doe-ec25440e-l1-mc",
+        "doe-ec25440e-l1-tf",
+        "doe-ec25440e-l2-mc",
+        "doe-ec25440e-l2-tf",
+        "doe-ec25440e-l3-mc"
+      ]
+    },
+    {
+      "source_document_id": "eeb0dcfa519df542",
+      "source_file": "raw/eeb0dcfa519df542.txt",
+      "policy_name": "DOE Announces National Definition of a Zero Emissions Building",
+      "sha256": "eeb0dcfa519df54269a7eb02be3ee06a2098f8cc4f178162373a43ec1480351b",
+      "split": "train",
+      "item_uids": [
+        "doe-eeb0dcfa-l1-mc",
+        "doe-eeb0dcfa-l1-tf",
+        "doe-eeb0dcfa-l2-mc",
+        "doe-eeb0dcfa-l2-tf",
+        "doe-eeb0dcfa-l3-qa"
+      ]
+    },
+    {
+      "source_document_id": "fb90e1e890b46889",
+      "source_file": "raw/fb90e1e890b46889.txt",
+      "policy_name": "Biden-Harris Administration Announces First State in Nation to Launch Historic Home Energy Rebates Program to Lower Families' Utility Bills",
+      "sha256": "fb90e1e890b46889cc8b0cf62a90c92f7c4554f5064da405000be790e4da325d",
+      "split": "train",
+      "item_uids": [
+        "doe-fb90e1e8-l1-mc",
+        "doe-fb90e1e8-l1-tf",
+        "doe-fb90e1e8-l2-mc",
+        "doe-fb90e1e8-l2-tf",
+        "doe-fb90e1e8-l3-mc"
+      ]
+    }
+  ]
+}

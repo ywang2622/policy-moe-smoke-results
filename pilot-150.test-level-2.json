@@ -1,0 +1,202 @@
+[
+  {
+    "policy_name": "Biden-Harris Administration Releases Joint Policy Statement and Principles on Voluntary Carbon Markets",
+    "question_type": "multiple_choice",
+    "question": "Why does the May 28, 2024 voluntary-carbon-markets announcement pair enthusiasm for private capital with a call to improve market integrity?",
+    "choice": {
+      "A": "Confidence depends on accepting promised climate impact without further checks so that capital can reach projects more quickly.",
+      "B": "Confidence and useful climate finance depend on addressing projects that fail to deliver their promised climate impact.",
+      "C": "Useful climate finance requires directing credit revenues away from developing-country projects and toward domestic projects exclusively.",
+      "D": "Useful climate finance requires replacing voluntary private transactions with mandatory purchases by federal agencies."
+    },
+    "answer": "B",
+    "aspect": "Ideas",
+    "explanation": "The document presents integrity problems as obstacles to trust and useful financing, rather than treating capital flows alone as evidence of climate benefit.",
+    "id": 5,
+    "evidence_quote": "However, challenges in these markets, such as projects that don’t deliver the positive climate impact they promised, have undermined confidence in VCMs. These markets have the potential to create economic opportunity and can be a useful tool in tackling climate change, but only if further action is taken to address these challenges."
+  },
+  {
+    "policy_name": "Biden-Harris Administration Releases Joint Policy Statement and Principles on Voluntary Carbon Markets",
+    "question_type": "true_or_false",
+    "question": "The May 28, 2024 voluntary-carbon-markets announcement treats support for established nature-based practices as competing with its intended support for innovative climate technologies, rather than viewing both as potential beneficiaries.",
+    "answer": "false",
+    "choice": "true or false",
+    "aspect": "Interests",
+    "explanation": "The source explicitly identifies both existing credible practices and innovative technologies as beneficiaries of reliable carbon-market revenues.",
+    "id": 6,
+    "evidence_quote": "By providing steady, reliable revenue streams, VCMs can deliver additional capital and market support for both existing, credible decarbonization practices, including nature-based solutions, and for innovative climate technologies, including those that scale up carbon removal activities."
+  },
+  {
+    "policy_name": "Biden-Harris Administration Releases Joint Policy Statement and Principles on Voluntary Carbon Markets",
+    "question_type": "true_or_false",
+    "question": "In the May 28, 2024 voluntary-carbon-markets announcement, steady credit revenue is presented as a financing mechanism that can support decarbonization activity, rather than merely as a record that a transaction took place.",
+    "answer": "true",
+    "choice": "true or false",
+    "aspect": "Ideas",
+    "explanation": "The source links reliable revenue streams to additional capital and market support for credible practices and technologies.",
+    "id": 7,
+    "evidence_quote": "By providing steady, reliable revenue streams, VCMs can deliver additional capital and market support for both existing, credible decarbonization practices, including nature-based solutions, and for innovative climate technologies, including those that scale up carbon removal activities."
+  },
+  {
+    "policy_name": "Biden-Harris Administration Announces $4 Billion in Tax Credits to Build Clean Energy Supply Chain, Drive Investments, and Lower Costs in Energy Communities",
+    "question_type": "multiple_choice",
+    "question": "Which interpretation best explains the distinction between allocation and certification in the March 29, 2024 48C announcement's disclosure rules?",
+    "choice": {
+      "A": "Allocation does not by itself trigger required publication of recipient identities; before certification, program disclosure needs applicant consent.",
+      "B": "Certification preserves the same consent requirement indefinitely, so publication remains entirely voluntary after certification.",
+      "C": "Allocation requires immediate publication of recipient identities; certification changes only the published allocation amount.",
+      "D": "Allocation recipients must announce their awards publicly before the program can certify their projects."
+    },
+    "answer": "A",
+    "aspect": "Institutions",
+    "explanation": "The announcement separates the pre-certification consent restriction from the statutory publication requirement after certification.",
+    "id": 20,
+    "evidence_quote": "As required by statute, the §48C(e) program will publish the names of all organizations with certified projects and the amount of that allocation after projects are certified. Prior to certification, law prohibits the §48C(e) program from providing identifying information about allocation recipients or their projects without the applicant’s consent."
+  },
+  {
+    "policy_name": "Biden-Harris Administration Announces $4 Billion in Tax Credits to Build Clean Energy Supply Chain, Drive Investments, and Lower Costs in Energy Communities",
+    "question_type": "true_or_false",
+    "question": "The March 29, 2024 48C announcement's minimum allocation for designated energy communities reflects an effort to direct part of the investment benefit toward communities affected by coal-mine or coal-plant closures.",
+    "answer": "true",
+    "choice": "true or false",
+    "aspect": "Interests",
+    "explanation": "The source reserves part of the total funding for a category expressly defined through closed coal mines or plants, linking distribution of benefits to those communities.",
+    "id": 21,
+    "evidence_quote": "At least $4 billion of the total $10 billion will be allocated for projects in designated § 48C energy communities—communities with closed coal mines or coal plants as defined in Appendix C of IRS Notice 2023-44."
+  },
+  {
+    "policy_name": "Biden-Harris Administration Announces $4 Billion in Tax Credits to Build Clean Energy Supply Chain, Drive Investments, and Lower Costs in Energy Communities",
+    "question_type": "multiple_choice",
+    "question": "Which interpretation of the 30% investment-credit provision is supported by the March 29, 2024 48C announcement?",
+    "choice": {
+      "A": "The stated credit uses prevailing-wage and apprenticeship compliance in place of project certification.",
+      "B": "The stated credit links support for certified investment to compliance with prevailing-wage and apprenticeship requirements.",
+      "C": "The stated credit applies to certified investment regardless of whether prevailing-wage and apprenticeship requirements are met.",
+      "D": "The stated credit requires a certified project to choose between prevailing-wage compliance and apprenticeship compliance."
+    },
+    "answer": "B",
+    "aspect": "Institutions",
+    "explanation": "The source describes certification and the labor requirements together, not as interchangeable conditions or optional alternatives.",
+    "id": 22,
+    "evidence_quote": "The § 48C Program provides an investment tax credit of up to 30% of qualified investments for certified projects that meet prevailing wage and apprenticeship requirements."
+  },
+  {
+    "policy_name": "Federal Support Opportunities to Remediate and Redevelop Energy Assets: Wide-Ranging Initiatives to Drive Investment Opportunities in Energy Communities",
+    "question_type": "multiple_choice",
+    "question": "What policy logic links cleanup support with redevelopment finance in DOE's energy-asset-redevelopment announcement?",
+    "choice": {
+      "A": "Offering redevelopment finance removes the need to assess contamination at sites receiving loan guarantees.",
+      "B": "Addressing contamination barriers requires keeping legacy sites outside clean-energy redevelopment programs.",
+      "C": "Addressing contamination barriers can complement investment support so legacy energy sites can be repurposed.",
+      "D": "Offering cleanup grants makes redevelopment finance redundant because both programs serve the same sole function."
+    },
+    "answer": "C",
+    "aspect": "Ideas",
+    "explanation": "The source describes reinforcing roles: investment support for eligible sites and Brownfields assistance where contamination hinders redevelopment.",
+    "id": 35,
+    "evidence_quote": "EIR loan guarantees complement a suite of other federal programs that support energy infrastructure redevelopment. Brownfields Grants from the Environmental Protection Agency (EPA) support assessment and cleanup of sites where known or unknown contamination hinders redevelopment."
+  },
+  {
+    "policy_name": "Federal Support Opportunities to Remediate and Redevelop Energy Assets: Wide-Ranging Initiatives to Drive Investment Opportunities in Energy Communities",
+    "question_type": "true_or_false",
+    "question": "The DOE energy-asset-redevelopment announcement frames the clean-energy transition as benefiting new investors while leaving coal, oil, and gas workers outside its intended beneficiaries.",
+    "answer": "false",
+    "choice": "true or false",
+    "aspect": "Interests",
+    "explanation": "The announcement expressly includes those workers among the people meant to benefit from investment in energy communities.",
+    "id": 36,
+    "evidence_quote": "help ensure coal, oil, and gas workers benefit from the new clean energy economy."
+  },
+  {
+    "policy_name": "Federal Support Opportunities to Remediate and Redevelop Energy Assets: Wide-Ranging Initiatives to Drive Investment Opportunities in Energy Communities",
+    "question_type": "true_or_false",
+    "question": "DOE's energy-asset-redevelopment announcement treats uncertainty about contamination as outside Brownfields support because it presents that support solely as cleanup after contamination is already known.",
+    "answer": "false",
+    "choice": "true or false",
+    "aspect": "Institutions",
+    "explanation": "The source includes assessment as well as cleanup and refers to known or unknown contamination, so the program description addresses uncertainty as a redevelopment barrier.",
+    "id": 37,
+    "evidence_quote": "Brownfields Grants from the Environmental Protection Agency (EPA) support assessment and cleanup of sites where known or unknown contamination hinders redevelopment."
+  },
+  {
+    "policy_name": "Biden-Harris Administration Announces Historic Investments to Support America’s Energy and Industrial Communities",
+    "question_type": "multiple_choice",
+    "question": "Which interpretation best captures the equity purpose of the Low-Income Communities Bonus Credit Program described in the February 13, 2023 energy-and-industrial-communities announcement?",
+    "choice": {
+      "A": "Expand participation and benefits for underserved communities, including community-based organizations and people historically excluded from economic opportunities.",
+      "B": "Direct benefits principally to communities with the least environmental burden because historically burdened communities are outside the program's aims.",
+      "C": "Measure success through renewable capacity alone because distribution of economic benefits is outside the program's aims.",
+      "D": "Concentrate participation among established national developers because expanding access to new market participants is outside the program's aims."
+    },
+    "answer": "A",
+    "aspect": "Interests",
+    "explanation": "The listed equity goals combine access, new market participation, and substantial benefits for marginalized and environmentally overburdened communities.",
+    "id": 44,
+    "evidence_quote": "Providing substantial benefits to underserved communities and individuals who have been historically marginalized from economic opportunities and overburdened by environmental impacts."
+  },
+  {
+    "policy_name": "Biden-Harris Administration Announces Historic Investments to Support America’s Energy and Industrial Communities",
+    "question_type": "true_or_false",
+    "question": "In the February 13, 2023 announcement, prioritizing minority-owned firms for the manufacturing-and-recycling grants is compatible with requiring Community Benefits Plans from applicants generally, rather than making such plans a requirement only for the prioritized firms.",
+    "answer": "true",
+    "choice": "true or false",
+    "aspect": "Institutions",
+    "explanation": "The source distinguishes a priority among applicants from a universal application requirement: all applicants must submit the plan.",
+    "id": 45,
+    "evidence_quote": "The program will prioritize applications from minority-owned firms, and all applicants are required to submit a Community Benefits Plan demonstrating the project’s impact and benefits to the host community and region."
+  },
+  {
+    "policy_name": "Biden-Harris Administration Announces Historic Investments to Support America’s Energy and Industrial Communities",
+    "question_type": "multiple_choice",
+    "question": "What role does the planned NREL partnership for technical assistance play in the February 13, 2023 energy-and-industrial-communities announcement?",
+    "choice": {
+      "A": "It preserves inactive infrastructure in its existing condition because new economic uses are outside the program's purpose.",
+      "B": "It helps small and medium manufacturers assess feasibility and plan transitions involving clean-energy jobs and inactive energy infrastructure.",
+      "C": "It replaces feasibility analysis with an automatic grant award for every small or medium manufacturer that requests advice.",
+      "D": "It limits assistance to large manufacturers because planning by small and medium firms is outside the program's purpose."
+    },
+    "answer": "B",
+    "aspect": "Ideas",
+    "explanation": "Technical assistance is described as a planning and feasibility tool supporting economic transition, not as an automatic funding entitlement or preservation-only program.",
+    "id": 46,
+    "evidence_quote": "will also establish a competitive technical assistance program in partnership with the National Renewable Energy Laboratory (NREL) to support small- and medium-manufacturers in feasibility analyses and other planning activities"
+  },
+  {
+    "policy_name": "Biden- Harris Administration Supports Local Projects to Save Energy and Tackle the Climate Crisis as part of Investing in America Agenda",
+    "question_type": "multiple_choice",
+    "question": "What institutional purpose does the voucher option serve in the February 28, 2024 EECBG announcement?",
+    "choice": {
+      "A": "It requires local governments and Tribes to complete a traditional grant award before requesting equipment or technical assistance.",
+      "B": "It expands eligibility to private households by transferring the local-government and Tribal application process to residents.",
+      "C": "It replaces traditional grants for local governments and Tribes so that those entities can no longer apply through the grant route.",
+      "D": "It gives local governments and Tribes an alternative route for equipment rebates or technical assistance that reduces administrative burden."
+    },
+    "answer": "D",
+    "aspect": "Institutions",
+    "explanation": "The option is a streamlined alternative to a traditional grant, not a replacement, eligibility expansion, or added prerequisite.",
+    "id": 47,
+    "evidence_quote": "Local governments and Tribes have the unique option to apply for traditional grants or vouchers for equipment rebates or technical assistance. In November 2023, DOE launched the Voucher Portal to submit voucher applications. This streamlined platform and application will reduce the administrative burden of applying for and managing EECBG Program awards."
+  },
+  {
+    "policy_name": "Biden- Harris Administration Supports Local Projects to Save Energy and Tackle the Climate Crisis as part of Investing in America Agenda",
+    "question_type": "true_or_false",
+    "question": "The February 28, 2024 EECBG announcement describes broad eligible-use categories as a way to replace local energy priorities with one uniform project design across grantees.",
+    "answer": "false",
+    "choice": "true or false",
+    "aspect": "Ideas",
+    "explanation": "The source connects flexibility to existing local efforts and needs, which is inconsistent with imposing a single uniform design.",
+    "id": 48,
+    "evidence_quote": "The program funding is highly flexible, with over 14 categories of eligible use, allowing grantees to invest in projects that align with efforts already in motion to lower energy costs, plan for a clean energy future, and reduce energy burden."
+  },
+  {
+    "policy_name": "Biden- Harris Administration Supports Local Projects to Save Energy and Tackle the Climate Crisis as part of Investing in America Agenda",
+    "question_type": "true_or_false",
+    "question": "The Guam example in the February 28, 2024 EECBG announcement links energy upgrades to community-service benefits: lowering operating costs can free resources for programs serving underserved youth.",
+    "answer": "true",
+    "choice": "true or false",
+    "aspect": "Interests",
+    "explanation": "The source connects clean-energy cost savings at community centers to increased resources for youth programming, beyond direct energy savings alone.",
+    "id": 49,
+    "evidence_quote": "Cost savings from the clean energy upgrades will enable community centers to direct more resources to programming for underserved youth."
+  }
+]

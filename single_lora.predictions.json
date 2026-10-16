@@ -1,51 +1,315 @@
 {
   "metadata": {
-    "dataset_sha256": "74df87e339f3017a8229f5dd07570b641de0d034c1c000aabe743654488f05ef",
+    "dataset_sha256": "40f6224d09abfc3b690678c9594c97c50a17eac4ff2f11147f3473b17aaa7c09",
     "system": "single_lora",
     "model": "Qwen/Qwen2.5-7B-Instruct",
     "resolved_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
     "quantized_nf4": true,
     "decoding": "greedy",
     "max_new_tokens": 384,
-    "checkpoint_config_sha256": "79fc81c21a282b55da27759403c3d1b4dc9137ae244f73e4231f51a9417ae660",
-    "dataset_kind": "authored_editorially_reviewed_fixture",
-    "test_question_count": 6,
-    "test_document_count": 1
+    "checkpoint_config_sha256": "649a7cc3fa324198027da3812b588681a27877317df4463bd7dff2efb3f28040",
+    "dataset_kind": "agent_authored_editorially_reviewed_fixture",
+    "test_question_count": 50,
+    "test_document_count": 5
   },
   "predictions": [
     {
-      "uid": "doe-assets-l1",
+      "uid": "pilot125-vcm-l1-mc",
       "prediction": "D",
       "selected_expert": "single_lora",
       "router_probabilities": null
     },
     {
-      "uid": "doe-assets-l1-tf",
-      "prediction": "false",
+      "uid": "pilot125-vcm-l1-tf",
+      "prediction": "true",
       "selected_expert": "single_lora",
       "router_probabilities": null
     },
     {
-      "uid": "doe-assets-l2",
+      "uid": "pilot150-vcm-l1-mc-date",
+      "prediction": "D",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-48c-l1-mc",
       "prediction": "A",
       "selected_expert": "single_lora",
       "router_probabilities": null
     },
     {
-      "uid": "doe-assets-l2-tf",
+      "uid": "pilot125-48c-l1-tf",
+      "prediction": "true",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-48c-l1-mc-origin",
+      "prediction": "C",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-assets-l1-mc",
+      "prediction": "C",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-assets-l1-tf",
+      "prediction": "true",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-assets-l1-mc-eir-name",
+      "prediction": "D",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-industry-l1-mc",
+      "prediction": "A",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-industry-l1-tf",
+      "prediction": "true",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-industry-l1-mc-administrator",
+      "prediction": "C",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-eecbg-l1-mc",
+      "prediction": "D",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-eecbg-l1-tf",
+      "prediction": "true",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-eecbg-l1-mc-fourth-tranche",
+      "prediction": "B",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-vcm-l2-mc",
+      "prediction": "B",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-vcm-l2-tf",
       "prediction": "false",
       "selected_expert": "single_lora",
       "router_probabilities": null
     },
     {
-      "uid": "doe-assets-l3",
-      "prediction": "The community should investigate the following federal support options:\n\n1. **Redevelopment Capital**: The Community Revitalization Fund (CRF) and the Brownfields Program. The CRF provides grants for community revitalization projects, including brownfield sites. The Brownfields Program offers grants and loans for environmental cleanup and job training.\n\n2. **Contamination Assessment and Cleanup**: The Brownfields Program and the Superfund Program. The Brownfields Program provides grants for site assessment, cleanup, and job training. The Superfund Program is responsible for cleaning up the most hazardous and complex sites through a combination of enforcement actions and cleanup activities.\n\n3. **Clean-Energy Investment**: The Clean Energy Manufacturing Assistance Center (CEMAC), the Loan Programs Office (LPO), and the Energy Efficiency and Renewable Energy (EERE) programs. CEMAC provides technical assistance and resources for manufacturers to improve energy efficiency and reduce greenhouse gas emissions. LPO offers loan guarantees for large-scale renewable energy and energy efficiency projects. EERE supports research, development, demonstration, and deployment of energy efficiency and renewable energy technologies.\n\nThe two referenced mapping tools can help establish:\n\n- **Community Revitalization Fund (CRF) Mapping Tool**: This tool helps identify eligible communities and projects that can benefit from CRF funding.\n- **Brownfields Mapping Tool**: This tool identifies potential brownfield sites across the country, providing information on site status, available funding, and local contacts.",
+      "uid": "pilot150-vcm-l2-tf-revenue",
+      "prediction": "true",
       "selected_expert": "single_lora",
       "router_probabilities": null
     },
     {
-      "uid": "doe-assets-l3-mc",
+      "uid": "pilot125-48c-l2-mc",
       "prediction": "A",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-48c-l2-tf",
+      "prediction": "true",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-48c-l2-mc-labor-conditions",
+      "prediction": "B",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-assets-l2-mc",
+      "prediction": "C",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-assets-l2-tf",
+      "prediction": "false",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-assets-l2-tf-unknown-contamination",
+      "prediction": "true",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-industry-l2-mc",
+      "prediction": "A",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-industry-l2-tf",
+      "prediction": "true",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-industry-l2-mc-technical-assistance",
+      "prediction": "B",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-eecbg-l2-mc",
+      "prediction": "D",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-eecbg-l2-tf",
+      "prediction": "false",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-eecbg-l2-tf-community-savings",
+      "prediction": "true",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-vcm-l3-mc",
+      "prediction": "D",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-vcm-l3-mc-protocol-input",
+      "prediction": "A",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-vcm-l3-open-agency-roles",
+      "prediction": "The workstream assignments are:\n\n1. Direct carbon-removal purchases - Department of Energy (DOE)\n2. Market infrastructure and support - Environmental Protection Agency (EPA) and Department of Agriculture (USDA)\n3. International climate-agreement negotiations - State Department (DOS)\n4. International crediting initiatives such as LEAF and the Energy Transition Accelerator - DOS\n5. Principles for private-sector net-zero transition planning - Council of Economic Advisers (CEA), National Economic Council (NEC), and White House Office of Management and Budget (OMB)",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-vcm-l3-tf-credit-quantity",
+      "prediction": "false",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-48c-l3-open",
+      "prediction": "The project would face a 6-year delay from the time it starts construction until it can enter service. Instead, the project should plan to submit its certification information within one year of starting construction, and then enter service within one year of receiving certification. This aligns with the one-year timeline for submitting certification information and entering service.",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-48c-l3-mc-category-sum",
+      "prediction": "B",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-48c-l3-open-disclosure",
+      "prediction": "The officer should:\n\n1. Not disclose the first project's allocation before certification and consent, as required by 48C.105(b)(3) and 48C.105(c)(2).\n\n2. Publish the second project's allocation and other information on the Department of Energy website within 60 days after certification, as required by 48C.105(c)(1).\n\n3. Require the first recipient to make a public announcement about the allocation, as a condition of receiving the funds, consistent with 48C.105(c)(2).\n\n4. Note that the allocation remains subject to the terms of the agreement, including the requirement for the public announcement, until the recipient consents to identification.\n\n5. Recognize that the allocation may be reduced or rescinded if the recipient fails to comply with the terms of the agreement, including the public announcement requirement, as provided by 48C.105(c)(2).\n\n6. Ensure that the officer's actions are consistent with the 48C.105(c)(2) requirement that the recipient \"shall\" make a public announcement, rather than \"may\" make one, and that the announcement must include the information specified in 48C.105(c)(2)(i)-(iv).\n\n7. Note that the officer's actions will not affect the allocation, which remains subject to the terms of the agreement, including the public announcement requirement, until the recipient consents to identification.",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-48c-l3-tf-publicity",
+      "prediction": "true",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-assets-l3-mc",
+      "prediction": "B",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-assets-l3-mc-operating-site",
+      "prediction": "B",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-assets-l3-open-funding-plan",
+      "prediction": "The DOE energy-assets announcement does not offer $250 billion in cleanup grants; it provides up to $1 billion in grants per site. The EIR and Brownfields programs are separate, with EIR focused on environmental justice communities and Brownfields on contaminated sites. The Energy Community Tax Credit Bonus is not an automatic benefit for all local clean-energy projects; it requires a specific application process.\n\nFor capital, investigate the DOE's Office of Energy Efficiency and Renewable Energy (EERE) funding opportunities, including the Building Technologies Office, Solar Energy Technologies Office, and Wind Energy Technologies Office. For uncertain contamination, consider the Superfund program administered by the Environmental Protection Agency (EPA). For clean-energy development, explore the EERE's loan guarantee program and the Department of Agriculture's Rural Energy for America Program (REAP).\n\nThe announcement has no explicit eligibility limit, but projects must be located in an energy community and demonstrate significant economic impact. Energy communities are defined as areas with a high concentration of energy assets or facilities, such as coal mines, power plants, or oil refineries.",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-assets-l3-tf-loan-scale",
+      "prediction": "true",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-industry-l3-open",
+      "prediction": "Project A qualifies for the 10% bonus because it is on Tribal land, and the 10% bonus applies to projects on Tribal lands. Project B qualifies for the 20% bonus because it directs more than 50% of its benefits to low-income households, and the 20% bonus applies to projects with at least 50% of their benefits directed to low-income households. The distinction that matters is the location of the project (Tribal land) and the percentage of benefits directed to low-income households.",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-industry-l3-mc-capacity-sum",
+      "prediction": "B",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-industry-l3-open-manufacturer-plan",
+      "prediction": "The relevant program is the $1 billion Energy Communities Investment Program (ECIP). The assumptions are incorrect: the company must be minority-owned to apply; a Community Benefits Plan is required; and the company must submit a concept paper by April 7, 2023, with the full application due by June 8, 2023.",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-industry-l3-tf-deadlines",
+      "prediction": "true",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot125-eecbg-l3-mc",
+      "prediction": "A",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-eecbg-l3-mc-solar-capacity",
+      "prediction": "B",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-eecbg-l3-open-town-route",
+      "prediction": "The two application routes are vouchers and traditional grants. The voucher route is intended to reduce administrative burden for small towns. The Community Energy Fellow route is associated with traditional grants. The local-government application deadline is March 15, 2024, and the Fellow-support application deadline is April 15, 2024.",
+      "selected_expert": "single_lora",
+      "router_probabilities": null
+    },
+    {
+      "uid": "pilot150-eecbg-l3-tf-fellow-deadline",
+      "prediction": "false",
       "selected_expert": "single_lora",
       "router_probabilities": null
     }

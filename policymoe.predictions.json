@@ -1,76 +1,516 @@
 {
   "metadata": {
-    "dataset_sha256": "74df87e339f3017a8229f5dd07570b641de0d034c1c000aabe743654488f05ef",
+    "dataset_sha256": "40f6224d09abfc3b690678c9594c97c50a17eac4ff2f11147f3473b17aaa7c09",
     "system": "policymoe",
     "model": "Qwen/Qwen2.5-7B-Instruct",
     "resolved_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
     "quantized_nf4": true,
     "decoding": "greedy",
     "max_new_tokens": 384,
-    "checkpoint_config_sha256": "79fc81c21a282b55da27759403c3d1b4dc9137ae244f73e4231f51a9417ae660",
-    "dataset_kind": "authored_editorially_reviewed_fixture",
-    "test_question_count": 6,
-    "test_document_count": 1
+    "checkpoint_config_sha256": "649a7cc3fa324198027da3812b588681a27877317df4463bd7dff2efb3f28040",
+    "dataset_kind": "agent_authored_editorially_reviewed_fixture",
+    "test_question_count": 50,
+    "test_document_count": 5
   },
   "predictions": [
     {
-      "uid": "doe-assets-l1",
+      "uid": "pilot125-vcm-l1-mc",
+      "prediction": "D",
+      "selected_expert": "memory",
+      "router_probabilities": [
+        0.6432860493659973,
+        0.33528152108192444,
+        0.021432308480143547
+      ]
+    },
+    {
+      "uid": "pilot125-vcm-l1-tf",
+      "prediction": "true",
+      "selected_expert": "understanding",
+      "router_probabilities": [
+        0.41992849111557007,
+        0.5761898756027222,
+        0.003881725948303938
+      ]
+    },
+    {
+      "uid": "pilot150-vcm-l1-mc-date",
+      "prediction": "D",
+      "selected_expert": "memory",
+      "router_probabilities": [
+        0.8941148519515991,
+        0.08362823724746704,
+        0.022256966680288315
+      ]
+    },
+    {
+      "uid": "pilot125-48c-l1-mc",
       "prediction": "A",
       "selected_expert": "memory",
       "router_probabilities": [
-        0.42952632904052734,
-        0.42058366537094116,
-        0.14989006519317627
+        0.8232666254043579,
+        0.05463070049881935,
+        0.12210260331630707
       ]
     },
     {
-      "uid": "doe-assets-l1-tf",
-      "prediction": "False",
+      "uid": "pilot125-48c-l1-tf",
+      "prediction": "false",
+      "selected_expert": "understanding",
+      "router_probabilities": [
+        0.3108308017253876,
+        0.6792275905609131,
+        0.009941580705344677
+      ]
+    },
+    {
+      "uid": "pilot150-48c-l1-mc-origin",
+      "prediction": "C",
+      "selected_expert": "memory",
+      "router_probabilities": [
+        0.8680844902992249,
+        0.026975905522704124,
+        0.10493957996368408
+      ]
+    },
+    {
+      "uid": "pilot125-assets-l1-mc",
+      "prediction": "A",
+      "selected_expert": "memory",
+      "router_probabilities": [
+        0.5247742533683777,
+        0.15777809917926788,
+        0.3174476623535156
+      ]
+    },
+    {
+      "uid": "pilot125-assets-l1-tf",
+      "prediction": "true",
+      "selected_expert": "understanding",
+      "router_probabilities": [
+        0.2986942529678345,
+        0.6915447115898132,
+        0.009761047549545765
+      ]
+    },
+    {
+      "uid": "pilot150-assets-l1-mc-eir-name",
+      "prediction": "D",
+      "selected_expert": "memory",
+      "router_probabilities": [
+        0.7247163653373718,
+        0.05723266676068306,
+        0.2180510014295578
+      ]
+    },
+    {
+      "uid": "pilot125-industry-l1-mc",
+      "prediction": "A",
+      "selected_expert": "memory",
+      "router_probabilities": [
+        0.7025385499000549,
+        0.25068992376327515,
+        0.0467715822160244
+      ]
+    },
+    {
+      "uid": "pilot125-industry-l1-tf",
+      "prediction": "true",
+      "selected_expert": "understanding",
+      "router_probabilities": [
+        0.3145190179347992,
+        0.6772178411483765,
+        0.00826308410614729
+      ]
+    },
+    {
+      "uid": "pilot150-industry-l1-mc-administrator",
+      "prediction": "C",
+      "selected_expert": "memory",
+      "router_probabilities": [
+        0.7798448801040649,
+        0.06425810605287552,
+        0.15589706599712372
+      ]
+    },
+    {
+      "uid": "pilot125-eecbg-l1-mc",
+      "prediction": "D",
+      "selected_expert": "memory",
+      "router_probabilities": [
+        0.8556592464447021,
+        0.09142511337995529,
+        0.052915673702955246
+      ]
+    },
+    {
+      "uid": "pilot125-eecbg-l1-tf",
+      "prediction": "false",
+      "selected_expert": "understanding",
+      "router_probabilities": [
+        0.37313973903656006,
+        0.6198922395706177,
+        0.00696801720187068
+      ]
+    },
+    {
+      "uid": "pilot150-eecbg-l1-mc-fourth-tranche",
+      "prediction": "B",
+      "selected_expert": "memory",
+      "router_probabilities": [
+        0.6659789085388184,
+        0.050205010920763016,
+        0.28381597995758057
+      ]
+    },
+    {
+      "uid": "pilot125-vcm-l2-mc",
+      "prediction": "B",
       "selected_expert": "application",
       "router_probabilities": [
-        0.08807078748941422,
-        0.17838698625564575,
-        0.733542263507843
+        0.27817079424858093,
+        0.00999000109732151,
+        0.7118391990661621
       ]
     },
     {
-      "uid": "doe-assets-l2",
+      "uid": "pilot125-vcm-l2-tf",
+      "prediction": "false",
+      "selected_expert": "understanding",
+      "router_probabilities": [
+        0.2670189440250397,
+        0.6764364838600159,
+        0.05654454603791237
+      ]
+    },
+    {
+      "uid": "pilot150-vcm-l2-tf-revenue",
+      "prediction": "true",
+      "selected_expert": "understanding",
+      "router_probabilities": [
+        0.37623921036720276,
+        0.6212456822395325,
+        0.0025151465088129044
+      ]
+    },
+    {
+      "uid": "pilot125-48c-l2-mc",
+      "prediction": "A",
+      "selected_expert": "memory",
+      "router_probabilities": [
+        0.7290590405464172,
+        0.046341996639966965,
+        0.22459900379180908
+      ]
+    },
+    {
+      "uid": "pilot125-48c-l2-tf",
+      "prediction": "true",
+      "selected_expert": "understanding",
+      "router_probabilities": [
+        0.2798665761947632,
+        0.7190588712692261,
+        0.0010744769824668765
+      ]
+    },
+    {
+      "uid": "pilot150-48c-l2-mc-labor-conditions",
+      "prediction": "B",
+      "selected_expert": "application",
+      "router_probabilities": [
+        0.3988405466079712,
+        0.13305698335170746,
+        0.46810248494148254
+      ]
+    },
+    {
+      "uid": "pilot125-assets-l2-mc",
+      "prediction": "C",
+      "selected_expert": "memory",
+      "router_probabilities": [
+        0.8340500593185425,
+        0.0066046337597072124,
+        0.15934531390666962
+      ]
+    },
+    {
+      "uid": "pilot125-assets-l2-tf",
+      "prediction": "false",
+      "selected_expert": "understanding",
+      "router_probabilities": [
+        0.1779906302690506,
+        0.7492813467979431,
+        0.07272796332836151
+      ]
+    },
+    {
+      "uid": "pilot150-assets-l2-tf-unknown-contamination",
+      "prediction": "true",
+      "selected_expert": "understanding",
+      "router_probabilities": [
+        0.2727811932563782,
+        0.7107319235801697,
+        0.01648693159222603
+      ]
+    },
+    {
+      "uid": "pilot125-industry-l2-mc",
       "prediction": "A",
       "selected_expert": "application",
       "router_probabilities": [
-        0.08110766857862473,
-        0.03217046707868576,
-        0.8867219090461731
+        0.24847237765789032,
+        0.02863205596804619,
+        0.7228955626487732
       ]
     },
     {
-      "uid": "doe-assets-l2-tf",
-      "prediction": "False",
+      "uid": "pilot125-industry-l2-tf",
+      "prediction": "true",
+      "selected_expert": "understanding",
+      "router_probabilities": [
+        0.3763056695461273,
+        0.6186655759811401,
+        0.0050287991762161255
+      ]
+    },
+    {
+      "uid": "pilot150-industry-l2-mc-technical-assistance",
+      "prediction": "B",
       "selected_expert": "application",
       "router_probabilities": [
-        0.026741551235318184,
-        0.04912646487355232,
-        0.9241320490837097
+        0.21373999118804932,
+        0.03378145396709442,
+        0.7524785399436951
       ]
     },
     {
-      "uid": "doe-assets-l3",
-      "prediction": "For a community looking to convert a retired, potentially contaminated coal plant into a clean-energy project, the following federal support options from the Department of Energy (DOE) document on remediating and redeveloping energy assets should be investigated:\n\n1. **Redevelopment Capital**: The community should explore the DOE’s loan programs, such as the Loan Programs Office (LPO), which provides financial assistance for advanced energy projects. Additionally, the DOE’s State Energy Program (SEP) offers grants and technical assistance to states for energy efficiency and renewable energy projects.\n\n2. **Contamination Assessment and Cleanup**: The community should consider the Environmental Protection Agency (EPA) Brownfields Program, which provides grants and other resources to assess, revitalize, and develop properties that may be contaminated with hazardous substances. The EPA also has the Superfund program for more complex or hazardous sites.\n\n3. **Clean-Energy Investment**: The community can look into the DOE’s Clean Energy Manufacturing Initiative, which supports the development of clean energy technologies and manufacturing capabilities. The DOE’s Energy Efficiency and Renewable Energy (EERE) office also offers various funding opportunities and technical assistance for clean energy projects.\n\nThe two referenced mapping tools mentioned in the document can help establish:\n\n- **Energy Community Mapping Tool**: This tool can identify existing energy infrastructure and resources within the community, helping to understand the potential for clean energy projects.\n- **Brownfields Mapping Tool**: This tool can pinpoint areas with contaminated properties, aiding in the identification of sites suitable for remediation and redevelopment.",
+      "uid": "pilot125-eecbg-l2-mc",
+      "prediction": "D",
+      "selected_expert": "memory",
+      "router_probabilities": [
+        0.7089765071868896,
+        0.18367759883403778,
+        0.10734584927558899
+      ]
+    },
+    {
+      "uid": "pilot125-eecbg-l2-tf",
+      "prediction": "false",
+      "selected_expert": "understanding",
+      "router_probabilities": [
+        0.25805941224098206,
+        0.7038766145706177,
+        0.03806399181485176
+      ]
+    },
+    {
+      "uid": "pilot150-eecbg-l2-tf-community-savings",
+      "prediction": "true",
+      "selected_expert": "understanding",
+      "router_probabilities": [
+        0.4699835181236267,
+        0.5265215039253235,
+        0.003494979813694954
+      ]
+    },
+    {
+      "uid": "pilot125-vcm-l3-mc",
+      "prediction": "D",
+      "selected_expert": "memory",
+      "router_probabilities": [
+        0.7198590040206909,
+        0.2342497706413269,
+        0.04589120298624039
+      ]
+    },
+    {
+      "uid": "pilot150-vcm-l3-mc-protocol-input",
+      "prediction": "A",
+      "selected_expert": "memory",
+      "router_probabilities": [
+        0.6867310404777527,
+        0.01281829085201025,
+        0.3004506528377533
+      ]
+    },
+    {
+      "uid": "pilot150-vcm-l3-open-agency-roles",
+      "prediction": "The May 28, 2024, joint policy statement and principles on voluntary carbon markets by the Biden-Harris Administration assigns the following workstreams to the respective agencies:\n\n1. **Direct carbon-removal purchases** - The Department of Energy (DOE) and the Environmental Protection Agency (EPA).\n2. **Market infrastructure and support** - The Department of Agriculture (USDA), the Department of Energy (DOE), the Environmental Protection Agency (EPA), the Department of the Interior (DOI), and the Department of Transportation (DOT).\n3. **International climate-agreement negotiations** - The Department of State (DOS).\n4. **International crediting initiatives such as LEAF and the Energy Transition Accelerator** - The Department of State (DOS).\n5. **Principles for private-sector net-zero transition planning** - The Department of Energy (DOE), the Environmental Protection Agency (EPA), the Department of the Interior (DOI), the Department of Transportation (DOT), the Department of Agriculture (USDA), the Department of Commerce (DOC), the Department of Labor (DOL), the Department of Housing and Urban Development (HUD), the Department of Health and Human Services (HHS), the Department of Education (ED), the Department of Veterans Affairs (VA), the Department of Homeland Security (DHS), the Department of Justice (DOJ), the Department of the Treasury (UST), the National Oceanic and Atmospheric Administration (NOAA), the National Institute of Standards and Technology (NIST), the National Science Foundation (NSF), the Office of Science and Technology Policy (OSTP), the Council on Environmental Quality (CEQ), the White House Office of Management and Budget (OMB), the White House Office of Domestic Climate Policy (ODCP), and the White House Office of National Security (ONS).",
       "selected_expert": "application",
       "router_probabilities": [
-        0.055054523050785065,
-        0.00883337203413248,
-        0.936112105846405
+        0.009551078081130981,
+        0.004044381435960531,
+        0.986404538154602
       ]
     },
     {
-      "uid": "doe-assets-l3-mc",
+      "uid": "pilot150-vcm-l3-tf-credit-quantity",
+      "prediction": "false",
+      "selected_expert": "understanding",
+      "router_probabilities": [
+        0.1511523723602295,
+        0.813223659992218,
+        0.03562391176819801
+      ]
+    },
+    {
+      "uid": "pilot125-48c-l3-open",
+      "prediction": "The project would face two main issues with this timeline:\n\n1. **Timing Problem**: The project would miss the deadline for submitting certification information. According to the process, projects must submit their certification information within three years of selection. If a project waits three years before submitting certification information, it will have already missed the deadline.\n\n2. **Timing Problem**: The project would also face a potential issue with entering service after certification. Projects are required to enter service within six years of certification. If a project waits three years after certification to enter service, it would exceed the six-year limit.\n\n**Alternative Timeline**:\n- **Stage 1**: Submit certification information within the first three years of selection.\n- **Stage 2**: Enter service within six years of certification.\n\nThis two-stage timeline ensures compliance with the announced process while allowing the project sufficient time to complete its development and enter service.",
+      "selected_expert": "application",
+      "router_probabilities": [
+        0.01136687584221363,
+        0.0012105937348678708,
+        0.9874225854873657
+      ]
+    },
+    {
+      "uid": "pilot150-48c-l3-mc-category-sum",
       "prediction": "A",
       "selected_expert": "application",
       "router_probabilities": [
-        0.04123659059405327,
-        0.02630525827407837,
-        0.9324581623077393
+        0.25031140446662903,
+        0.129902184009552,
+        0.6197865009307861
+      ]
+    },
+    {
+      "uid": "pilot150-48c-l3-open-disclosure",
+      "prediction": "The officer should follow these steps:\n\n1. Pre-Certification Disclosure: No public announcement or disclosure is required for projects that have received an allocation but are not yet certified and have not consented to identification.\n\n2. Post-Certification Publication: Once the project is certified, the recipient must make a public announcement disclosing the award details, including the amount of the award, the project description, and the recipient's name.\n\n3. Voluntary Recipient Publicity: The recipient can choose to make their own public announcement regarding the award, but it is not a requirement.\n\n4. Effects on Allocation: If the recipient does not make the required public announcement after certification, the allocation may be rescinded or reduced. The recipient must comply with the conditions set forth by the program to maintain their allocation.\n\nSources:\n- 48C Program Communications Officer guidelines\n- 48C Program regulations and policies",
+      "selected_expert": "application",
+      "router_probabilities": [
+        0.036040715873241425,
+        0.0019018957391381264,
+        0.96205735206604
+      ]
+    },
+    {
+      "uid": "pilot150-48c-l3-tf-publicity",
+      "prediction": "true",
+      "selected_expert": "understanding",
+      "router_probabilities": [
+        0.4242490828037262,
+        0.5749696493148804,
+        0.0007813280099071562
+      ]
+    },
+    {
+      "uid": "pilot125-assets-l3-mc",
+      "prediction": "B",
+      "selected_expert": "application",
+      "router_probabilities": [
+        0.20257073640823364,
+        0.020175866782665253,
+        0.7772533893585205
+      ]
+    },
+    {
+      "uid": "pilot150-assets-l3-mc-operating-site",
+      "prediction": "B",
+      "selected_expert": "application",
+      "router_probabilities": [
+        0.4249148666858673,
+        0.014236520044505596,
+        0.560848593711853
+      ]
+    },
+    {
+      "uid": "pilot150-assets-l3-open-funding-plan",
+      "prediction": "The $250 billion in cleanup grants is incorrect; the announcement does not offer such grants. The Energy Communities Initiative (ECI) provides financial assistance for the cleanup and redevelopment of former federal energy facilities. The ECI supports communities in developing comprehensive redevelopment plans and provides funding for environmental remediation, infrastructure improvements, and economic development activities.\n\nFor capital, uncertain contamination, and clean-energy development, the ECI can be investigated as it provides support for these areas. The ECI is designed to address the unique challenges faced by energy communities, including the need for environmental cleanup, infrastructure improvements, and economic diversification. It also includes provisions for clean-energy development, which can help stimulate local economies and create jobs.\n\nRegarding the Energy Community Tax Credit Bonus, it is not an automatic benefit for all local clean-energy projects. The tax credit bonus is available for qualified projects that meet specific criteria, such as being located in an energy community and contributing to the economic revitalization of the area. Eligibility limits for the ECI announcement vary depending on the specific program and the needs of each community. Generally, the ECI aims to provide significant support to energy communities, but the exact amount of funding and the number of projects that can be supported depend on the availability of resources and the specific requirements of each program.",
+      "selected_expert": "application",
+      "router_probabilities": [
+        0.023409834131598473,
+        0.0075709219090640545,
+        0.9690192937850952
+      ]
+    },
+    {
+      "uid": "pilot150-assets-l3-tf-loan-scale",
+      "prediction": "true",
+      "selected_expert": "understanding",
+      "router_probabilities": [
+        0.2294732630252838,
+        0.7631323337554932,
+        0.007394369691610336
+      ]
+    },
+    {
+      "uid": "pilot125-industry-l3-open",
+      "prediction": "Project A would receive a 10 percentage point increase in the credit rate because it is located on tribal land. Project B would receive a 15 percentage point increase in the credit rate because it directs 55% of its benefits to low-income households. The distinction that matters is the location of the project and the percentage of benefits directed to low-income households.",
+      "selected_expert": "application",
+      "router_probabilities": [
+        0.012669757939875126,
+        0.0025572071317583323,
+        0.9847730398178101
+      ]
+    },
+    {
+      "uid": "pilot150-industry-l3-mc-capacity-sum",
+      "prediction": "B",
+      "selected_expert": "application",
+      "router_probabilities": [
+        0.31701257824897766,
+        0.24499662220478058,
+        0.43799078464508057
+      ]
+    },
+    {
+      "uid": "pilot150-industry-l3-open-manufacturer-plan",
+      "prediction": "The relevant program is the $1 billion in new funding announced by the Biden-Harris Administration on February 13, 2023, for the Energy and Industrial Communities Initiative (EICI). The EICI aims to support the transition of energy and industrial communities to clean energy and modern manufacturing.\n\nFor a small manufacturer that is not minority-owned, the following assumptions are incorrect:\n\n- Omitting a Community Benefits Plan (CBP) is not allowed. The EICI requires all applicants to develop and submit a CBP as part of their application.\n- Sending a full application without a concept paper is not allowed. The EICI has two submission deadlines: March 15, 2023, for concept papers, and June 8, 2023, for full applications. The small manufacturer must first submit a concept paper by March 15, 2023, and then, if selected, submit a full application by June 8, 2023.\n\nTo be eligible for the funding opportunity, the small manufacturer should prepare a concept paper by March 15, 2023, and follow the guidance provided in the EICI announcement to ensure compliance with the required materials and deadlines.",
+      "selected_expert": "application",
+      "router_probabilities": [
+        0.07987365871667862,
+        0.00532962940633297,
+        0.9147967100143433
+      ]
+    },
+    {
+      "uid": "pilot150-industry-l3-tf-deadlines",
+      "prediction": "true",
+      "selected_expert": "understanding",
+      "router_probabilities": [
+        0.37359747290611267,
+        0.6231804490089417,
+        0.0032220256980508566
+      ]
+    },
+    {
+      "uid": "pilot125-eecbg-l3-mc",
+      "prediction": "A",
+      "selected_expert": "application",
+      "router_probabilities": [
+        0.134760320186615,
+        0.01114061288535595,
+        0.8540990352630615
+      ]
+    },
+    {
+      "uid": "pilot150-eecbg-l3-mc-solar-capacity",
+      "prediction": "B",
+      "selected_expert": "understanding",
+      "router_probabilities": [
+        0.31644731760025024,
+        0.3918265700340271,
+        0.29172611236572266
+      ]
+    },
+    {
+      "uid": "pilot150-eecbg-l3-open-town-route",
+      "prediction": "The two application routes are the Voucher Route and the Traditional Grant Route. The Voucher Route is designed to provide more flexibility and less grant administration for eligible towns. The Traditional Grant Route involves in-person implementation support.\n\nFor the Voucher Route, the application deadline was February 15, 2024. For the Traditional Grant Route, the application deadline was March 15, 2024. The Community Energy Fellows application deadline was also March 15, 2024.",
+      "selected_expert": "application",
+      "router_probabilities": [
+        0.16652771830558777,
+        0.024496473371982574,
+        0.8089757561683655
+      ]
+    },
+    {
+      "uid": "pilot150-eecbg-l3-tf-fellow-deadline",
+      "prediction": "false",
+      "selected_expert": "understanding",
+      "router_probabilities": [
+        0.2672947943210602,
+        0.7265880703926086,
+        0.006117136683315039
       ]
     }
   ]

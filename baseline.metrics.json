@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "dataset_sha256": "74df87e339f3017a8229f5dd07570b641de0d034c1c000aabe743654488f05ef",
+    "dataset_sha256": "40f6224d09abfc3b690678c9594c97c50a17eac4ff2f11147f3473b17aaa7c09",
     "system": "baseline",
     "model": "Qwen/Qwen2.5-7B-Instruct",
     "resolved_revision": "a09a35458c702b33eeacc393d103063234e8bc28",
@@ -8,23 +8,23 @@
     "decoding": "greedy",
     "max_new_tokens": 384,
     "checkpoint_config_sha256": null,
-    "dataset_kind": "authored_editorially_reviewed_fixture",
-    "test_question_count": 6,
-    "test_document_count": 1
+    "dataset_kind": "agent_authored_editorially_reviewed_fixture",
+    "test_question_count": 50,
+    "test_document_count": 5
   },
   "judge_models": [],
   "judge_note": "Budget judges are exploratory; not the paper's strong-model judge panel",
   "levels": {
     "1": {
-      "objective_count": 2,
+      "objective_count": 15,
       "open_count": 0,
-      "objective_accuracy": 0.0,
+      "objective_accuracy": 0.7333333333333333,
       "open_mean_0_to_5": null,
-      "paper_weighted_score": 0.0,
+      "paper_weighted_score": 0.7333333333333333,
       "judging_complete": true
     },
     "2": {
-      "objective_count": 2,
+      "objective_count": 15,
       "open_count": 0,
       "objective_accuracy": 1.0,
       "open_mean_0_to_5": null,
@@ -32,9 +32,9 @@
       "judging_complete": true
     },
     "3": {
-      "objective_count": 1,
-      "open_count": 1,
-      "objective_accuracy": 1.0,
+      "objective_count": 13,
+      "open_count": 7,
+      "objective_accuracy": 0.7692307692307693,
       "open_mean_0_to_5": null,
       "paper_weighted_score": null,
       "judging_complete": false
@@ -42,7 +42,55 @@
   },
   "items": [
     {
-      "uid": "doe-assets-l1",
+      "uid": "pilot125-vcm-l1-mc",
+      "level": 1,
+      "type": "multiple_choice",
+      "score": 1,
+      "parsed_answer": "D",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot125-vcm-l1-tf",
+      "level": 1,
+      "type": "true_or_false",
+      "score": 1,
+      "parsed_answer": "true",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot150-vcm-l1-mc-date",
+      "level": 1,
+      "type": "multiple_choice",
+      "score": 1,
+      "parsed_answer": "D",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot125-48c-l1-mc",
+      "level": 1,
+      "type": "multiple_choice",
+      "score": 1,
+      "parsed_answer": "A",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot125-48c-l1-tf",
+      "level": 1,
+      "type": "true_or_false",
+      "score": 1,
+      "parsed_answer": "false",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot150-48c-l1-mc-origin",
+      "level": 1,
+      "type": "multiple_choice",
+      "score": 1,
+      "parsed_answer": "C",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot125-assets-l1-mc",
       "level": 1,
       "type": "multiple_choice",
       "score": 0,
@@ -50,7 +98,55 @@
       "format_valid": true
     },
     {
-      "uid": "doe-assets-l1-tf",
+      "uid": "pilot125-assets-l1-tf",
+      "level": 1,
+      "type": "true_or_false",
+      "score": 1,
+      "parsed_answer": "true",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot150-assets-l1-mc-eir-name",
+      "level": 1,
+      "type": "multiple_choice",
+      "score": 0,
+      "parsed_answer": "D",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot125-industry-l1-mc",
+      "level": 1,
+      "type": "multiple_choice",
+      "score": 0,
+      "parsed_answer": "A",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot125-industry-l1-tf",
+      "level": 1,
+      "type": "true_or_false",
+      "score": 1,
+      "parsed_answer": "false",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot150-industry-l1-mc-administrator",
+      "level": 1,
+      "type": "multiple_choice",
+      "score": 1,
+      "parsed_answer": "C",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot125-eecbg-l1-mc",
+      "level": 1,
+      "type": "multiple_choice",
+      "score": 1,
+      "parsed_answer": "D",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot125-eecbg-l1-tf",
       "level": 1,
       "type": "true_or_false",
       "score": 0,
@@ -58,15 +154,23 @@
       "format_valid": true
     },
     {
-      "uid": "doe-assets-l2",
-      "level": 2,
+      "uid": "pilot150-eecbg-l1-mc-fourth-tranche",
+      "level": 1,
       "type": "multiple_choice",
       "score": 1,
-      "parsed_answer": "A",
+      "parsed_answer": "B",
       "format_valid": true
     },
     {
-      "uid": "doe-assets-l2-tf",
+      "uid": "pilot125-vcm-l2-mc",
+      "level": 2,
+      "type": "multiple_choice",
+      "score": 1,
+      "parsed_answer": "B",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot125-vcm-l2-tf",
       "level": 2,
       "type": "true_or_false",
       "score": 1,
@@ -74,17 +178,253 @@
       "format_valid": true
     },
     {
-      "uid": "doe-assets-l3",
+      "uid": "pilot150-vcm-l2-tf-revenue",
+      "level": 2,
+      "type": "true_or_false",
+      "score": 1,
+      "parsed_answer": "true",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot125-48c-l2-mc",
+      "level": 2,
+      "type": "multiple_choice",
+      "score": 1,
+      "parsed_answer": "A",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot125-48c-l2-tf",
+      "level": 2,
+      "type": "true_or_false",
+      "score": 1,
+      "parsed_answer": "true",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot150-48c-l2-mc-labor-conditions",
+      "level": 2,
+      "type": "multiple_choice",
+      "score": 1,
+      "parsed_answer": "B",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot125-assets-l2-mc",
+      "level": 2,
+      "type": "multiple_choice",
+      "score": 1,
+      "parsed_answer": "C",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot125-assets-l2-tf",
+      "level": 2,
+      "type": "true_or_false",
+      "score": 1,
+      "parsed_answer": "false",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot150-assets-l2-tf-unknown-contamination",
+      "level": 2,
+      "type": "true_or_false",
+      "score": 1,
+      "parsed_answer": "false",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot125-industry-l2-mc",
+      "level": 2,
+      "type": "multiple_choice",
+      "score": 1,
+      "parsed_answer": "A",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot125-industry-l2-tf",
+      "level": 2,
+      "type": "true_or_false",
+      "score": 1,
+      "parsed_answer": "true",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot150-industry-l2-mc-technical-assistance",
+      "level": 2,
+      "type": "multiple_choice",
+      "score": 1,
+      "parsed_answer": "B",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot125-eecbg-l2-mc",
+      "level": 2,
+      "type": "multiple_choice",
+      "score": 1,
+      "parsed_answer": "D",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot125-eecbg-l2-tf",
+      "level": 2,
+      "type": "true_or_false",
+      "score": 1,
+      "parsed_answer": "false",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot150-eecbg-l2-tf-community-savings",
+      "level": 2,
+      "type": "true_or_false",
+      "score": 1,
+      "parsed_answer": "true",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot125-vcm-l3-mc",
+      "level": 3,
+      "type": "multiple_choice",
+      "score": 1,
+      "parsed_answer": "D",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot150-vcm-l3-mc-protocol-input",
+      "level": 3,
+      "type": "multiple_choice",
+      "score": 1,
+      "parsed_answer": "A",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot150-vcm-l3-open-agency-roles",
       "level": 3,
       "type": "q&a",
       "score": null
     },
     {
-      "uid": "doe-assets-l3-mc",
+      "uid": "pilot150-vcm-l3-tf-credit-quantity",
+      "level": 3,
+      "type": "true_or_false",
+      "score": 1,
+      "parsed_answer": "false",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot125-48c-l3-open",
+      "level": 3,
+      "type": "q&a",
+      "score": null
+    },
+    {
+      "uid": "pilot150-48c-l3-mc-category-sum",
+      "level": 3,
+      "type": "multiple_choice",
+      "score": 0,
+      "parsed_answer": "A",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot150-48c-l3-open-disclosure",
+      "level": 3,
+      "type": "q&a",
+      "score": null
+    },
+    {
+      "uid": "pilot150-48c-l3-tf-publicity",
+      "level": 3,
+      "type": "true_or_false",
+      "score": 1,
+      "parsed_answer": "true",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot125-assets-l3-mc",
+      "level": 3,
+      "type": "multiple_choice",
+      "score": 1,
+      "parsed_answer": "B",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot150-assets-l3-mc-operating-site",
+      "level": 3,
+      "type": "multiple_choice",
+      "score": 1,
+      "parsed_answer": "B",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot150-assets-l3-open-funding-plan",
+      "level": 3,
+      "type": "q&a",
+      "score": null
+    },
+    {
+      "uid": "pilot150-assets-l3-tf-loan-scale",
+      "level": 3,
+      "type": "true_or_false",
+      "score": 0,
+      "parsed_answer": "true",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot125-industry-l3-open",
+      "level": 3,
+      "type": "q&a",
+      "score": null
+    },
+    {
+      "uid": "pilot150-industry-l3-mc-capacity-sum",
+      "level": 3,
+      "type": "multiple_choice",
+      "score": 1,
+      "parsed_answer": "B",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot150-industry-l3-open-manufacturer-plan",
+      "level": 3,
+      "type": "q&a",
+      "score": null
+    },
+    {
+      "uid": "pilot150-industry-l3-tf-deadlines",
+      "level": 3,
+      "type": "true_or_false",
+      "score": 1,
+      "parsed_answer": "true",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot125-eecbg-l3-mc",
       "level": 3,
       "type": "multiple_choice",
       "score": 1,
       "parsed_answer": "A",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot150-eecbg-l3-mc-solar-capacity",
+      "level": 3,
+      "type": "multiple_choice",
+      "score": 0,
+      "parsed_answer": "B",
+      "format_valid": true
+    },
+    {
+      "uid": "pilot150-eecbg-l3-open-town-route",
+      "level": 3,
+      "type": "q&a",
+      "score": null
+    },
+    {
+      "uid": "pilot150-eecbg-l3-tf-fellow-deadline",
+      "level": 3,
+      "type": "true_or_false",
+      "score": 1,
+      "parsed_answer": "false",
       "format_valid": true
     }
   ]
